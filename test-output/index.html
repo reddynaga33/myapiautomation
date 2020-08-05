@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\qeadmin\Desktop\DIASApiAutomation\testng.xml</span>
+                    <span>C:\Users\qeadmin\Desktop\codepush\DIAS-TA-API\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.abb.dias.api.automation.test.kshtest.KshApiServicesTest" class="method navigator-link" hash-for-method="runtest">runtest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest" class="method navigator-link" hash-for-method="runtest">runtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +117,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.abb.dias.api.automation.test.kshtest.KshApiServicesTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -127,55 +128,23 @@
                   <a name="runtest">
                   </a> <!-- runtest -->
                   <span class="method-name">runtest</span>
-                  <div class="stack-trace"><b>"java.lang.NullPointerException
-	at com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)
-	at com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)
-... Removed 24 stack frames<br/> java.lang.NullPointerException
-	at com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)
-	at com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)<br>com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\qeadmin\Desktop\DIASApiAutomation\testng.xml</span>
+            <span class="header-content">C:\Users\qeadmin\Desktop\codepush\DIAS-TA-API\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.abb.dias.api.automation.test.kshtest.KshApiServicesTest&quot;/&gt;
+      &lt;class name=&quot;com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -218,13 +187,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runtest')
-data.setCell(0, 2, 'com.abb.dias.api.automation.test.kshtest.KshApiServicesTest')
-data.setCell(0, 3, 5347);
+data.setCell(0, 2, 'com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest')
+data.setCell(0, 3, 8371);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,15 +210,45 @@ return data;
                 <span class="reporter-method-output">kSH Api services Execution has started</span>
                 <span class="reporter-method-output">The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1</span>
                 <span class="reporter-method-output">Parameterized Json Request Body is :: </span>
-                <span class="reporter-method-output">The Token Response time is:1372 Milli seconds</span>
+                <span class="reporter-method-output">The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC</span>
+                <span class="reporter-method-output">The Token Response time is:992 Milli seconds</span>
                 <span class="reporter-method-output">The Response status code for Token generation API is:200</span>
-                <span class="reporter-method-output">The respone time is : 90 Milli seconds</span>
-                <span class="reporter-method-output">The response status code for post request is :404</span>
+                <span class="reporter-method-output">The respone time is : 190 Milli seconds</span>
+                <span class="reporter-method-output">The response status code for post request is :200</span>
                 <span class="reporter-method-output">The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1</span>
-                <span class="reporter-method-output"> Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')</span>
-                <span class="reporter-method-output"> Method Name is : writerrAn exception occued while wirting the list of items into text file: null</span>
-                <span class="reporter-method-output"> Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')</span>
-                <span class="reporter-method-output">D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1</span>
+                <span class="reporter-method-output">D_Accounting Period Respone code is  :200 VS Expected Response code is :200</span>
+                <span class="reporter-method-output">Collected API Response into text files </span>
+                <span class="reporter-method-output">The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1</span>
+                <span class="reporter-method-output">Parameterized Json Request Body is :: {{SCE_SYS_COD}}</span>
+                <span class="reporter-method-output">The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC</span>
+                <span class="reporter-method-output">The Token Response time is:225 Milli seconds</span>
+                <span class="reporter-method-output">The Response status code for Token generation API is:200</span>
+                <span class="reporter-method-output">The respone time is : 33 Milli seconds</span>
+                <span class="reporter-method-output">The response status code for post request is :200</span>
+                <span class="reporter-method-output">The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1</span>
+                <span class="reporter-method-output">D_Aging Respone code is  :200 VS Expected Response code is :200</span>
+                <span class="reporter-method-output">Collected API Response into text files </span>
+                <span class="reporter-method-output">The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1</span>
+                <span class="reporter-method-output">Parameterized Json Request Body is :: </span>
+                <span class="reporter-method-output">The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC</span>
+                <span class="reporter-method-output">The Token Response time is:149 Milli seconds</span>
+                <span class="reporter-method-output">The Response status code for Token generation API is:200</span>
+                <span class="reporter-method-output">The respone time is : 26 Milli seconds</span>
+                <span class="reporter-method-output">The response status code for post request is :200</span>
+                <span class="reporter-method-output">The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1</span>
+                <span class="reporter-method-output">D_Activity Type Respone code is  :200 VS Expected Response code is :200</span>
+                <span class="reporter-method-output">Collected API Response into text files </span>
+                <span class="reporter-method-output">The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1</span>
+                <span class="reporter-method-output">Parameterized Json Request Body is :: </span>
+                <span class="reporter-method-output">The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC</span>
+                <span class="reporter-method-output">The Token Response time is:148 Milli seconds</span>
+                <span class="reporter-method-output">The Response status code for Token generation API is:200</span>
+                <span class="reporter-method-output">The respone time is : 28 Milli seconds</span>
+                <span class="reporter-method-output">The response status code for post request is :200</span>
+                <span class="reporter-method-output">The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1</span>
+                <span class="reporter-method-output">Collected API Response into text files </span>
+                <span class="reporter-method-output">D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1</span>
+                <span class="reporter-method-output">The api response key value pairs count is not machting with the db result key value pairs</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,24 +266,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.abb.dias.api.automation.test.kshtest.KshApiServicesTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforetest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runtest</span>
-                <span class="method-start">319 ms</span>
+                <span class="method-start">272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=runtest status=FAILURE method=KshApiServicesTest.runtest()[pri:0, instance:com.abb....)</span>
-                <span class="method-start">5687 ms</span>
+                <span class="method-name">afterMethod([TestResult name=runtest status=SUCCESS method=KshApiServicesExecutionTest.runtest()[pri:0, instance...)</span>
+                <span class="method-start">8649 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">5690 ms</span>
+                <span class="method-start">8652 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

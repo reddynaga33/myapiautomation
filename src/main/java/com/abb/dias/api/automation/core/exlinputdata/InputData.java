@@ -21,6 +21,9 @@ public class InputData {
 	public static List<String> meta_endpoint = new ArrayList<String>();
 	public static List<String> meta_request_body = new ArrayList<String>();
 	public static List<String> meta_sql_query = new ArrayList<String>();
+	public static List<String> response_datatype = new ArrayList<String>();
+	public static List<String> index_column = new ArrayList<String>();
+
 	public static List<String> execute = new ArrayList<String>();
 	public static List<String> data_validation = new ArrayList<String>();
 	public static List<String> command = new ArrayList<String>();
@@ -48,6 +51,10 @@ public class InputData {
 	public static List<String>  var2_column  = new ArrayList<String>();
 	public static List<String> capature3_column = new ArrayList<String>();
 	public static List<String> var3_column = new ArrayList<String>();
+	public static List<String> capature4_column = new ArrayList<String>();
+	public static List<String> capature5_column = new ArrayList<String>();
+
+
 
 
 	public static List<String> no_of_repeatations = new ArrayList<String>();
@@ -64,7 +71,7 @@ public class InputData {
 
 	}
 
-	/*This method is used to read the input data from excel sheet
+	/*This method is used to read the input data sheet from excel
 	 * 
 	 */
 
@@ -132,7 +139,13 @@ public class InputData {
 						.getCellText(inputFileReader.getColumnNumber("Capture 3"), inputfilerow));
 				var3_column.add(inputFileReader.getCellText(inputFileReader.getColumnNumber("Var 3"),
 						inputfilerow));
-
+				capature3_column.add( inputFileReader
+						.getCellText(inputFileReader.getColumnNumber("Capture 3"), inputfilerow));
+				capature4_column.add( inputFileReader
+						.getCellText(inputFileReader.getColumnNumber("Capture 4"), inputfilerow));
+				capature5_column.add( inputFileReader
+						.getCellText(inputFileReader.getColumnNumber("Capture 5"), inputfilerow));
+				
 				
 			}
 
@@ -165,6 +178,12 @@ public class InputData {
 						.getCellText(metaFileReader.getColumnNumber("Request Body"), metarow));
 				meta_sql_query.add(metaFileReader
 						.getCellText(metaFileReader.getColumnNumber("Data Validation Query"), metarow));
+				response_datatype.add(metaFileReader
+						.getCellText(metaFileReader.getColumnNumber("Response Data Type"), metarow));
+				index_column.add(metaFileReader
+						.getCellText(metaFileReader.getColumnNumber("Index"), metarow));
+				
+				
 				
 			}
 		} catch (Exception e) {

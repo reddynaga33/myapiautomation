@@ -44,8 +44,9 @@ public class RestApiUtility {
 	 * @Param httpMethod This is method of the http request such as POST OR GET OR
 	 * PUT OR DELETE
 	 */
+	public Response executeHttpRequest(String endURL, String payLoad, String httpMethod) {
 
-	public Response executeHttpRequest(String endURL, JSONObject payLoad, String httpMethod) {
+	//public Response executeHttpRequest(String endURL, JSONObject payLoad, String httpMethod) {
 
 		ExcelReader reader = new ExcelReader(EnvironmentManager.getExcelConfigSheetName().trim());
 		String baseURL = reader.getValuefromConfigExcel("Base URL");
@@ -54,42 +55,65 @@ public class RestApiUtility {
 		Response postresponse = null;
 		String token = null;
 		String url = null;
+		String totalurl=null;
 
 		if (!endURL.isEmpty() || httpMethod.isEmpty()) {
 			try {
-				url = baseURL + endURL;
+				totalurl = baseURL + endURL;
+				url = baseURL;
 				
-				//TestLogger.testMessage("The API URL is: "+url);
-				//Reporter.log("The API URL is: "+url);
+				TestLogger.testMessage("The API URL is: "+totalurl);
+				Reporter.log("The API URL is: "+totalurl);
 				RestAssured.baseURI = url;
-				 
+				RestAssured.useRelaxedHTTPSValidation();
 				httprequest = RestAssured.given();
 				token = gettoken();
 				httprequest.header("authorization", "Bearer " + token);
 				httprequest.header("Content-Type", "application/json");
 				if (httpMethod.equalsIgnoreCase("POST") & (payLoad == null)) {
 					Thread.sleep(50);
-					getresponse = httprequest.request(Method.POST);
-					 System.out.println("two");
+					getresponse = httprequest.request(Method.POST,endURL);
+				
 				}
 				if (httpMethod.equalsIgnoreCase("POST") & (payLoad != null)) {
-					httprequest.body(payLoad.toJSONString());
+					httprequest.body(payLoad);
 					Thread.sleep(50);
-					getresponse = httprequest.request(Method.POST);
+					getresponse = httprequest.request(Method.POST,endURL);
 				}
 				if (httpMethod.equalsIgnoreCase("GET") & (payLoad == null)) {
 					Thread.sleep(50);
-					getresponse = httprequest.request(Method.GET);
+					getresponse = httprequest.request(Method.GET,endURL);
 				}
 
 				if (httpMethod.equalsIgnoreCase("GET") & (payLoad != null)) {
+					System.out.println("the body put put is"+payLoad);
 					Thread.sleep(50);
-					getresponse = httprequest.request(Method.GET);
+					getresponse = httprequest.request(Method.GET,endURL);
+				}
+				if (httpMethod.equalsIgnoreCase("PUT") & (payLoad == null)) {
+					Thread.sleep(50);
+					getresponse = httprequest.request(Method.PUT,endURL);
+					
+				}
+				if (httpMethod.equalsIgnoreCase("PUT") & (payLoad != null)) {
+					httprequest.body(payLoad);
+					Thread.sleep(50);
+					getresponse = httprequest.request(Method.PUT,endURL);
+				}
+				
+				if (httpMethod.equalsIgnoreCase("DELETE") & (payLoad == null)) {
+					Thread.sleep(50);
+					getresponse = httprequest.request(Method.DELETE,endURL);
+				}
+				if (httpMethod.equalsIgnoreCase("DELETE") & (payLoad != null)) {
+					httprequest.body(payLoad);
+					Thread.sleep(50);
+					getresponse = httprequest.request(Method.DELETE,endURL);
 				}
 
 				postresponse = getresponse;
 				long seconds = getresponse.time();
-				 System.out.println("three");
+				 
 				TestLogger.testMessage("The respone time is : " + seconds + " Milli seconds");
 				TestLogger.testMessage("The response status code for post request is :" + postresponse.getStatusCode());
 				Reporter.log("The respone time is : " + seconds + " Milli seconds");
@@ -108,6 +132,7 @@ public class RestApiUtility {
 
 	}
 
+	
 	
 
 	/*

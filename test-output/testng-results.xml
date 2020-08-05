@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[kSH Api services Execution has started]]>
@@ -11,75 +11,133 @@
       <![CDATA[Parameterized Json Request Body is :: ]]>
     </line>
     <line>
-      <![CDATA[The Token Response time is:1372 Milli seconds]]>
+      <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC]]>
+    </line>
+    <line>
+      <![CDATA[The Token Response time is:992 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The Response status code for Token generation API is:200]]>
     </line>
     <line>
-      <![CDATA[The respone time is : 90 Milli seconds]]>
+      <![CDATA[The respone time is : 190 Milli seconds]]>
     </line>
     <line>
-      <![CDATA[The response status code for post request is :404]]>
+      <![CDATA[The response status code for post request is :200]]>
     </line>
     <line>
       <![CDATA[The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1]]>
     </line>
     <line>
-      <![CDATA[ Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+      <![CDATA[D_Accounting Period Respone code is  :200 VS Expected Response code is :200]]>
     </line>
     <line>
-      <![CDATA[ Method Name is : writerrAn exception occued while wirting the list of items into text file: null]]>
+      <![CDATA[Collected API Response into text files ]]>
     </line>
     <line>
-      <![CDATA[ Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+      <![CDATA[The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1]]>
     </line>
     <line>
-      <![CDATA[D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1]]>
+      <![CDATA[Parameterized Json Request Body is :: {{SCE_SYS_COD}}]]>
+    </line>
+    <line>
+      <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC]]>
+    </line>
+    <line>
+      <![CDATA[The Token Response time is:225 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The Response status code for Token generation API is:200]]>
+    </line>
+    <line>
+      <![CDATA[The respone time is : 33 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The response status code for post request is :200]]>
+    </line>
+    <line>
+      <![CDATA[The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1]]>
+    </line>
+    <line>
+      <![CDATA[D_Aging Respone code is  :200 VS Expected Response code is :200]]>
+    </line>
+    <line>
+      <![CDATA[Collected API Response into text files ]]>
+    </line>
+    <line>
+      <![CDATA[The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1]]>
+    </line>
+    <line>
+      <![CDATA[Parameterized Json Request Body is :: ]]>
+    </line>
+    <line>
+      <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC]]>
+    </line>
+    <line>
+      <![CDATA[The Token Response time is:149 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The Response status code for Token generation API is:200]]>
+    </line>
+    <line>
+      <![CDATA[The respone time is : 26 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The response status code for post request is :200]]>
+    </line>
+    <line>
+      <![CDATA[The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1]]>
+    </line>
+    <line>
+      <![CDATA[D_Activity Type Respone code is  :200 VS Expected Response code is :200]]>
+    </line>
+    <line>
+      <![CDATA[Collected API Response into text files ]]>
+    </line>
+    <line>
+      <![CDATA[The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1]]>
+    </line>
+    <line>
+      <![CDATA[Parameterized Json Request Body is :: ]]>
+    </line>
+    <line>
+      <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC]]>
+    </line>
+    <line>
+      <![CDATA[The Token Response time is:148 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The Response status code for Token generation API is:200]]>
+    </line>
+    <line>
+      <![CDATA[The respone time is : 28 Milli seconds]]>
+    </line>
+    <line>
+      <![CDATA[The response status code for post request is :200]]>
+    </line>
+    <line>
+      <![CDATA[The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1]]>
+    </line>
+    <line>
+      <![CDATA[Collected API Response into text files ]]>
+    </line>
+    <line>
+      <![CDATA[D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1]]>
+    </line>
+    <line>
+      <![CDATA[The api response key value pairs count is not machting with the db result key value pairs]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-07-17T05:33:37Z" name="Suite" finished-at="2020-07-17T05:33:43Z" duration-ms="6115">
+  <suite started-at="2020-08-05T05:23:49Z" name="Suite" finished-at="2020-08-05T05:23:58Z" duration-ms="9133">
     <groups>
     </groups>
-    <test started-at="2020-07-17T05:33:37Z" name="Test" finished-at="2020-07-17T05:33:43Z" duration-ms="6115">
-      <class name="com.abb.dias.api.automation.test.kshtest.KshApiServicesTest">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b]" started-at="2020-07-17T11:03:37Z" name="beforetest" finished-at="2020-07-17T11:03:37Z" duration-ms="311" status="PASS">
+    <test started-at="2020-08-05T05:23:49Z" name="Test" finished-at="2020-08-05T05:23:58Z" duration-ms="9133">
+      <class name="com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:49Z" name="beforetest" finished-at="2020-08-05T05:23:49Z" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b]" started-at="2020-07-17T11:03:37Z" name="runtest" finished-at="2020-07-17T11:03:42Z" duration-ms="5347" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)
-	at com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:49Z" name="runtest" finished-at="2020-08-05T05:23:58Z" duration-ms="8371" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[kSH Api services Execution has started]]>
@@ -91,55 +149,145 @@
               <![CDATA[Parameterized Json Request Body is :: ]]>
             </line>
             <line>
-              <![CDATA[The Token Response time is:1372 Milli seconds]]>
+              <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC]]>
+            </line>
+            <line>
+              <![CDATA[The Token Response time is:992 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The Response status code for Token generation API is:200]]>
             </line>
             <line>
-              <![CDATA[The respone time is : 90 Milli seconds]]>
+              <![CDATA[The respone time is : 190 Milli seconds]]>
             </line>
             <line>
-              <![CDATA[The response status code for post request is :404]]>
+              <![CDATA[The response status code for post request is :200]]>
             </line>
             <line>
               <![CDATA[The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1]]>
             </line>
             <line>
-              <![CDATA[ Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+              <![CDATA[D_Accounting Period Respone code is  :200 VS Expected Response code is :200]]>
             </line>
             <line>
-              <![CDATA[ Method Name is : writerrAn exception occued while wirting the list of items into text file: null]]>
+              <![CDATA[Collected API Response into text files ]]>
             </line>
             <line>
-              <![CDATA[ Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+              <![CDATA[The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1]]>
             </line>
             <line>
-              <![CDATA[D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1]]>
+              <![CDATA[Parameterized Json Request Body is :: {{SCE_SYS_COD}}]]>
+            </line>
+            <line>
+              <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC]]>
+            </line>
+            <line>
+              <![CDATA[The Token Response time is:225 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The Response status code for Token generation API is:200]]>
+            </line>
+            <line>
+              <![CDATA[The respone time is : 33 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The response status code for post request is :200]]>
+            </line>
+            <line>
+              <![CDATA[The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1]]>
+            </line>
+            <line>
+              <![CDATA[D_Aging Respone code is  :200 VS Expected Response code is :200]]>
+            </line>
+            <line>
+              <![CDATA[Collected API Response into text files ]]>
+            </line>
+            <line>
+              <![CDATA[The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1]]>
+            </line>
+            <line>
+              <![CDATA[Parameterized Json Request Body is :: ]]>
+            </line>
+            <line>
+              <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC]]>
+            </line>
+            <line>
+              <![CDATA[The Token Response time is:149 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The Response status code for Token generation API is:200]]>
+            </line>
+            <line>
+              <![CDATA[The respone time is : 26 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The response status code for post request is :200]]>
+            </line>
+            <line>
+              <![CDATA[The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1]]>
+            </line>
+            <line>
+              <![CDATA[D_Activity Type Respone code is  :200 VS Expected Response code is :200]]>
+            </line>
+            <line>
+              <![CDATA[Collected API Response into text files ]]>
+            </line>
+            <line>
+              <![CDATA[The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1]]>
+            </line>
+            <line>
+              <![CDATA[Parameterized Json Request Body is :: ]]>
+            </line>
+            <line>
+              <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC]]>
+            </line>
+            <line>
+              <![CDATA[The Token Response time is:148 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The Response status code for Token generation API is:200]]>
+            </line>
+            <line>
+              <![CDATA[The respone time is : 28 Milli seconds]]>
+            </line>
+            <line>
+              <![CDATA[The response status code for post request is :200]]>
+            </line>
+            <line>
+              <![CDATA[The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1]]>
+            </line>
+            <line>
+              <![CDATA[Collected API Response into text files ]]>
+            </line>
+            <line>
+              <![CDATA[D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1]]>
+            </line>
+            <line>
+              <![CDATA[The api response key value pairs count is not machting with the db result key value pairs]]>
             </line>
           </reporter-output>
         </test-method> <!-- runtest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b]" started-at="2020-07-17T11:03:42Z" name="afterMethod" finished-at="2020-07-17T11:03:42Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:58Z" name="afterMethod" finished-at="2020-08-05T05:23:58Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runtest status=FAILURE method=KshApiServicesTest.runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b] output=kSH Api services Execution has started]]]>
+                <![CDATA[[TestResult name=runtest status=SUCCESS method=KshApiServicesExecutionTest.runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb] output=kSH Api services Execution has started]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest.runtest() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b]" started-at="2020-07-17T11:03:42Z" name="aftertest" finished-at="2020-07-17T11:03:43Z" duration-ms="420" status="PASS">
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:58Z" name="aftertest" finished-at="2020-08-05T05:23:58Z" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
-      </class> <!-- com.abb.dias.api.automation.test.kshtest.KshApiServicesTest -->
+      </class> <!-- com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

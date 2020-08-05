@@ -32,7 +32,7 @@ public class ExcelReader {
 			
 			//file = new FileInputStream(fileLocation);
 			
-			file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\KshInputs11.xls");
+			file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\KshInputs13.xls");
 		} catch (FileNotFoundException e) {
            Reporter.log("An exception occured find the input excel file location path " + e.getMessage());
 		   TestLogger.errorMessage("An exception occured while reading find the input excel location path " + e.getMessage());			

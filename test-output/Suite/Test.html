@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 17 11:03:37 IST 2020</td>
+<td>Started on:</td><td>Wed Aug 05 10:53:49 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6115 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9133 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,67 +67,66 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest()'><b>runtest</b><br>Test class: com.abb.dias.api.automation.test.kshtest.KshApiServicesTest<br/>
-<a href="#Output-711540569" onClick='toggleBox("Output-711540569", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest.runtest()'><b>runtest</b><br>Test class: com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest<br/>
+<a href="#Output-352367347" onClick='toggleBox("Output-352367347", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-711540569" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-711540569">
+<a href="#Output-352367347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-352367347">
 kSH Api services Execution has started<br/>
 The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1<br/>
 Parameterized Json Request Body is :: <br/>
-The Token Response time is:1372 Milli seconds<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC<br/>
+The Token Response time is:992 Milli seconds<br/>
 The Response status code for Token generation API is:200<br/>
-The respone time is : 90 Milli seconds<br/>
-The response status code for post request is :404<br/>
+The respone time is : 190 Milli seconds<br/>
+The response status code for post request is :200<br/>
 The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1<br/>
- Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')<br/>
- Method Name is : writerrAn exception occued while wirting the list of items into text file: null<br/>
- Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')<br/>
-D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1<br/>
+D_Accounting Period Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1<br/>
+Parameterized Json Request Body is :: {{SCE_SYS_COD}}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC<br/>
+The Token Response time is:225 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 33 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1<br/>
+D_Aging Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1<br/>
+Parameterized Json Request Body is :: <br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC<br/>
+The Token Response time is:149 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 26 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1<br/>
+D_Activity Type Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1<br/>
+Parameterized Json Request Body is :: <br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC<br/>
+The Token Response time is:148 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 28 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1<br/>
+Collected API Response into text files <br/>
+D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1<br/>
+The api response key value pairs count is not machting with the db result key value pairs<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)
-	at com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace711540569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace711540569'><pre>java.lang.NullPointerException
-	at com.abb.dias.api.automation.page.kshpages.KshApiServicesPage.executeKshApisServices(KshApiServicesPage.java:270)
-	at com.abb.dias.api.automation.test.kshtest.KshApiServicesTest.runtest(KshApiServicesTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>5</td>
-<td>com.abb.dias.api.automation.test.kshtest.KshApiServicesTest@30c15d8b</td></tr>
+<td></td>
+<td>8</td>
+<td>com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb</td></tr>
 </table><p>
 </body>
 </html>

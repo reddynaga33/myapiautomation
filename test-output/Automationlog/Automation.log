@@ -5176,3 +5176,572 @@
 2020-Jul-17 11:03:42 INFO  TestLogger:187 - The S.No of test case executed is :1 & Testcase id is: 5298 & Number of repetation: 1
 2020-Jul-17 11:03:42 INFO  TestLogger:189 - **********************************************************
 2020-Jul-17 11:03:42 ERROR TestLogger:33 - D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1
+2020-Aug-05 09:12:52 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:12:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:52 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:12:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:52 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:12:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:52 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API//daisAPI/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=5&sortOrder=ASC
+2020-Aug-05 09:12:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:55 INFO  TestLogger:187 - The Token Response time is:967 Milli seconds
+2020-Aug-05 09:12:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:55 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:12:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:56 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4Njc0LCJuYmYiOjE1OTY1OTg2NzQsImV4cCI6MTU5NjYwMjU3NCwiYWlvIjoiRTJCZ1lQQ1l1bVRHZWZiRzVscTdYZmZ1TE9YNEN3QT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiIxcDhXUWNRQ25FeXY4Znluc000QkFBIiwidmVyIjoiMS4wIn0.6Vtq6erplt5OaIJGukajOeuXcluqGOOVfQnc_d3rNA4iDEFhthFOZTr9tMISDgMfS0Bm49cxhx-kOdOmiwBNHKks_eoM_3oslYtqQ68Q5X2xU6AysM3cDutGjQwWM8lvL2nJWmuKiLHhOTjjksxh6dzIkwv2h3Bf22B5MMRaEQmf5qSTOKlhWhQTd_Xna9m4u4a5_k9qIRZHWcfdOUQYs7InVJ2QTKiStrmla14Gqts-hcbJE3U8gG1Tbd6rLbY8q4j_ZIoJIlkMPzHf4sBRKoTEmzCFPUOcaKM9HSfDhJ3BKOea5JQvTigg1Q-qk7UR6Tr-be26hJzmvlnb5wCIxQ
+2020-Aug-05 09:12:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:56 INFO  TestLogger:187 - The respone time is : 156 Milli seconds
+2020-Aug-05 09:12:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:56 INFO  TestLogger:187 - The response status code for post request is :404
+2020-Aug-05 09:12:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:56 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:12:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:56 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:12:56 ERROR TestLogger:33 -  Method Name is : writerr An exception occued while wirting the list of items into text file:null
+2020-Aug-05 09:12:56 INFO  TestLogger:187 - select * from ICMPFM.D_ACG_PRD
+2020-Aug-05 09:12:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:57 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:12:58 INFO  TestLogger:187 - The S.No of test case executed is :1 & Testcase id is: 5298 & Number of repetation: 1
+2020-Aug-05 09:12:58 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:12:58 ERROR TestLogger:33 - D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1
+2020-Aug-05 09:13:36 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:13:36 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:36 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:13:36 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:36 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:13:36 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:36 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API//daisAPI/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=5&sortOrder=ASC
+2020-Aug-05 09:13:36 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:39 INFO  TestLogger:187 - The Token Response time is:1351 Milli seconds
+2020-Aug-05 09:13:39 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:39 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:13:39 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:40 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4NzE5LCJuYmYiOjE1OTY1OTg3MTksImV4cCI6MTU5NjYwMjYxOSwiYWlvIjoiRTJCZ1lNaWZIMmx2eWljeFZiZ3lMVmIzL2pSdEFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJfa1dRYTU3cV9VU2d2UG5BYVQ0Q0FBIiwidmVyIjoiMS4wIn0.eN8pYZl8WM10iWNv6NHffxattc_VtLFdjY7Af_X155YZj5Ibo2n0en4kmLvA3qpbT7WSM_ipexSxnfsJ-mFm37SJXuVx_lMOBplIbLAw9KqbzzHE8hbKgg2QDT-40KzHjvHfMc367vKHSjVUfOlAcIGAIhx9nLlGSg8YHPOi7DH9lTQ2vd6bFUk2cLgmOuT5zWctjdz0zd8PFucQ6q9LjwiEZ-IUDZWtGWasvbmv82Q9gQHd67bamjpDpA1LqO0ASu21L9DyFWQ8nBPzX670-9W2yX8BCag1I_0X-cvy-8URq2-ER0g34-Zfd0thsLwSqrnTB1jRetwcRPw1VmRlFg
+2020-Aug-05 09:13:40 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:41 INFO  TestLogger:187 - The respone time is : 112 Milli seconds
+2020-Aug-05 09:13:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:41 INFO  TestLogger:187 - The response status code for post request is :404
+2020-Aug-05 09:13:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:41 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:13:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:41 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:13:41 ERROR TestLogger:33 -  Method Name is : writerr An exception occued while wirting the list of items into text file:null
+2020-Aug-05 09:13:41 INFO  TestLogger:187 - select * from ICMPFM.D_ACG_PRD
+2020-Aug-05 09:13:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:41 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:13:42 INFO  TestLogger:187 - The S.No of test case executed is :1 & Testcase id is: 5298 & Number of repetation: 1
+2020-Aug-05 09:13:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:13:42 ERROR TestLogger:33 - D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1
+2020-Aug-05 09:14:28 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:14:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:28 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:14:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:28 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:14:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:28 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API//daisAPI/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=5&sortOrder=ASC
+2020-Aug-05 09:14:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:31 INFO  TestLogger:187 - The Token Response time is:1005 Milli seconds
+2020-Aug-05 09:14:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:31 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:14:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:32 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4NzcxLCJuYmYiOjE1OTY1OTg3NzEsImV4cCI6MTU5NjYwMjY3MSwiYWlvIjoiRTJCZ1lEaHJjRFRVZC80NVg2NXo4c3BKdWNMbkFRPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJ0Q2xOellKa05rR3ZVU2w3ajJJQ0FBIiwidmVyIjoiMS4wIn0.y8SXUhY2DVaxRYJEnqWGxgP_8Iqrtlbg-UFiJKi_WSX7bFWMT4jKErZ_HHXL3-YRMjit12GEon0UnGNO89ydnSZHYv6kgENdA-2IysBCikqA3AbzQPoLPxHGtfbG3BhOwRwEAeCPu4A4zCtGMlLii_Be2yo7AJrmvpwDnsvJ0IMWVS2JPopBjDNYmE53GnY5y05p5NPd1aRlu_VuN5aIDljUKgMghqA7LnCupI70A2PKiTFXmZ898Z3aR2D1_gomrJMz8qrHtOr8zx1Sk0HdDkH7vILKGEO-zY8ogaEFOJ34yum9mBTx3jXRPwv4sc6M2-HViOH5XodZUb05FMPdqQ
+2020-Aug-05 09:14:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:32 INFO  TestLogger:187 - The respone time is : 107 Milli seconds
+2020-Aug-05 09:14:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:32 INFO  TestLogger:187 - The response status code for post request is :404
+2020-Aug-05 09:14:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:32 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:14:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:32 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:14:32 ERROR TestLogger:33 -  Method Name is : writerr An exception occued while wirting the list of items into text file:null
+2020-Aug-05 09:14:32 INFO  TestLogger:187 - select * from ICMPFM.D_ACG_PRD
+2020-Aug-05 09:14:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:33 ERROR TestLogger:33 -  Method Name is : convertApiResponseTokeyValuePairs,An exception occured while converting the api json response into key and values pairs: class io.restassured.path.xml.XmlPath cannot be cast to class java.util.List (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+2020-Aug-05 09:14:33 INFO  TestLogger:187 - The S.No of test case executed is :1 & Testcase id is: 5298 & Number of repetation: 1
+2020-Aug-05 09:14:33 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:14:33 ERROR TestLogger:33 - D_Accounting Period Respone code is  :404 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mis matched : D_Accounting Period_s.no1_repeation_No1 VS D_Accounting Period_s.no1_repeation_No1
+2020-Aug-05 09:17:37 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:17:37 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:37 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:17:37 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:37 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:17:37 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:37 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC
+2020-Aug-05 09:17:37 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:39 INFO  TestLogger:187 - The Token Response time is:950 Milli seconds
+2020-Aug-05 09:17:39 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:39 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:17:39 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:40 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4OTU5LCJuYmYiOjE1OTY1OTg5NTksImV4cCI6MTU5NjYwMjg1OSwiYWlvIjoiRTJCZ1lPQ3RDRC9jSEw2SjZkU25yOXU2MUxVZkFBQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJjZ0loNFN5bTlVeUhwcFZuODM0Q0FBIiwidmVyIjoiMS4wIn0.xrJ-EaNq5wuJFdma6GNWF0ndi86irHxRzlQ4qg-Y55rVEtrn6G7MXcExXv8x3E0cDkXX9xIXM6r9h5WsfQuwBI6qMaJDO_mIyegZNsWINN9JYvtIFPdtmLL3vgoKNXw6eHBfh9Nqp9OYo21P9nESybVwrLCyQiDsAOWDgfdO50DVsNmJeKFPIdQ3PFqrs72YuQedVS4LaS_sv8p0Eh_nr2mi0piTb0GeBOC8ooKNb_ulnHQlJMdlRXH4XtQzQxQfUAmySdquRV6dqcJGawsLWAqqqeAPbQW6nx8-Il5wSHyIqzx_e-afxfqebBjaDKPj-RYGXtYDBcnipt4c5_hJZg
+2020-Aug-05 09:17:40 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The respone time is : 292 Milli seconds
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - D_Accounting Period Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - Parameterized Json Request Body is :: SCE_SYS_COD
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The Token Response time is:285 Milli seconds
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:41 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:17:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4OTYxLCJuYmYiOjE1OTY1OTg5NjEsImV4cCI6MTU5NjYwMjg2MSwiYWlvIjoiRTJCZ1lDakpFUkxndTFiNCtzV1hhNC9xZlV0NUFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJ5WVhDTmswc0UwLXpqTlJsY09FRUFBIiwidmVyIjoiMS4wIn0.fNixvNVzeV3mX-Dev3z0ZDleK_cJ48u1DaSEhdJ2oz_RYpYxfYrtTGfuXaQh0O-S0gc-K32k_AqTdpYX7VuIwgEZicy_cCQ53KwYwjjfhRhhpG5nLvriPWjcGoqKGFRlaHwHXf6ZRO8Hr3RxcgP2a7828QMIxt8ygRDd8Gl226xHOuzxrKu1xXRR_tlbnuh9nfskUYoKB4TjK0BJuHwlmbmO6YaNalDx1qn1U_xoSxM49j8WqY_LwPw-JWfnOCx1kF1L32iinCuQBm1voIW0v-n7hj4iEjh5kfgHS1QBKzAR_r5ybtjXCHGzpPnL-bEy18cPtfabDeLY3zD0ERY8RQ
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The respone time is : 29 Milli seconds
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - D_Aging Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The Token Response time is:172 Milli seconds
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:42 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4OTYyLCJuYmYiOjE1OTY1OTg5NjIsImV4cCI6MTU5NjYwMjg2MiwiYWlvIjoiRTJCZ1lMQkxlTnMxczA1SkltNzkxWW1lNys0ZkJBQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJMSHVzNEtkajJrVzdQUk9HVFBzQkFBIiwidmVyIjoiMS4wIn0.DUkI8xvkjlfs6-q5oSMBGibGFUJMdy_oAN89UJ4B-TroOxDFLGse0hkeqLNXwqgjAmMtPruyV9PNn6VJHXJGrJ36QxNzGo3W_eRv8X76SYdqSGZVwPq_6Ew1MyGW5TIEkNLzRDOlpR9kDI_8USmrD0PtSwdlmvpR2h2CMPkDNtazxMOcY2vMRN7Pq3xI2tEUnOPPsfOh0tJk1q5NGF2ntS8Ha3Q0GUcTrdLZuHm8fumT-BA-E6_Ozf5IK5XxH9b6ijBkmBSZDrwLyUNXdbR5MPfIzbSXe3ThmX-cf6oAAuvxYPV-z-Hun2TynDUMsouUMHMq2-ECm-K23dszdv1lxA
+2020-Aug-05 09:17:42 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The respone time is : 24 Milli seconds
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - D_Activity Type Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The Token Response time is:152 Milli seconds
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk4OTYzLCJuYmYiOjE1OTY1OTg5NjMsImV4cCI6MTU5NjYwMjg2MywiYWlvIjoiRTJCZ1lIQTg3VnUxalBkS3ljM3N6UlVSdC9ZMUF3QT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiI5dmJqRFBGTVMwbWpNcGJLMmJnRUFBIiwidmVyIjoiMS4wIn0.08-qQC2MyKauubHumVnJrFvhr5_atTxssh-HyZG8FWLiyC1sLk4VoPW1owiQdGta9gWP_iu408JzKtU3kK6d6G4t23KYrehvthxlLrH9LpymZvdwx6EqltTjBN5B5A57YPDwJf933XmE1U0t4YVssW0kXnf-drbHf3SBnE4Qp98FkMeaBvt6NQICLuNvwxfTUzHEl_ewidfoqwkhh7KEB2ek908eB3X_MYQVNWoZK3vKf-DpoiahEU918TmrMJSfeXEWrlXby6GmB6ZUDgJe0dJ3kqeOgQyU6WsMRG10DyMcfp1O4lwgJm_5ltsI2PXGDC80XUqd_GlxZvKTsJkmbA
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The respone time is : 24 Milli seconds
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:43 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:17:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:44 INFO  TestLogger:187 - Converted API Response into key value pairs: D_BOM Master
+2020-Aug-05 09:17:44 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:44 INFO  TestLogger:187 - sql query is :select * from ICMPCM.D_BOM_MST
+2020-Aug-05 09:17:44 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:45 INFO  TestLogger:187 - The S.No of test case executed is :5 & Testcase id is: 5302 & Number of Repetaion: 1
+2020-Aug-05 09:17:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:17:45 ERROR TestLogger:33 - D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1
+2020-Aug-05 09:17:45 INFO  TestLogger:187 - The api response key value pairs count is not machting with the db result key value pairs
+2020-Aug-05 09:17:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:41 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:27:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:41 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:27:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:41 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:27:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:41 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC
+2020-Aug-05 09:27:41 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:44 INFO  TestLogger:187 - The Token Response time is:1162 Milli seconds
+2020-Aug-05 09:27:44 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:44 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:27:44 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NTY0LCJuYmYiOjE1OTY1OTk1NjQsImV4cCI6MTU5NjYwMzQ2NCwiYWlvIjoiRTJCZ1lNaU1kRDh1K2t2LytBcEhQc1BjUHllL0FnQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJDMURidmZJcWswU2JKVU9PLUVBQ0FBIiwidmVyIjoiMS4wIn0.htDGKBW6cVz_p4d0-LFOHTcTI5b1JRJFz9Cmh4PLLAr0Oy3Ok_oJLP5087GA05JYJeYpUEOvh4a1NX5zvTXgYBIxgB8QqR2lxsQ0kBGBjqyo94d4c5MHdrFVH8bmZm5JMfny-sbdmquqIhILqmgjh2Vmp8I43aaSGVKQUTYvB2DujOsvGvNIvKsgmTYoeZ4sGGGuBmqWvW4bfcByfOSXnKpYx2rQDvw-7ecbQI_gNz4Am51TD9a0zoDk9vb2UAG3GpwLn652_vKubt8o_5izek04MPTOhqWxIbB8Vt3NlYtcxBapq0tq32xkSIXo9WqvXnoTrZwOrU6tgbulguBE5g
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - The respone time is : 166 Milli seconds
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - D_Accounting Period Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:45 INFO  TestLogger:187 - Parameterized Json Request Body is :: SCE_SYS_COD
+2020-Aug-05 09:27:45 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:46 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC
+2020-Aug-05 09:27:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:46 INFO  TestLogger:187 - The Token Response time is:156 Milli seconds
+2020-Aug-05 09:27:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:46 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:27:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:46 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NTY2LCJuYmYiOjE1OTY1OTk1NjYsImV4cCI6MTU5NjYwMzQ2NiwiYWlvIjoiRTJCZ1lHaHlMclROOGl2NmVVdGNvbXZDUHROMEFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJEVjRCakpJSWQwcTFMRHFLVHlBQ0FBIiwidmVyIjoiMS4wIn0.i9XiYbdGQBN9aQH2JmOK-LWLw6JDZgF80ouidVNgmKDyNvO8akD9c-pnBCU9EqHcsObHze-Gx50vgn8QxDTBgR6TgtByXTkcNTdhKqUrA_UqltR1pyP613-CCFasZ-rW1LGIU_M4AJvy6Hy_3RqpmZLk6pTKQ0Dj8h6aGDDftUDnQGr0jtRPdfMHXFP7UfMsAAdAE4IRS9mTZ-qFBEFI20ncx_ikvCt0r0IZ4hHgu6ewN9V-Tohz5QjmyWKwl9CA2NZPlK4X5_GA2rZW7xOn5DnpivckuPIHkTB2s3edKQrSdalQ9wYej5NmkKUqaWV2D4gVxnKg7uf_RiF8B0kBFw
+2020-Aug-05 09:27:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The respone time is : 44 Milli seconds
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - D_Aging Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The Token Response time is:145 Milli seconds
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NTY3LCJuYmYiOjE1OTY1OTk1NjcsImV4cCI6MTU5NjYwMzQ2NywiYWlvIjoiRTJCZ1lGajN2bkZSMDQ0MjN4bE11cjhuU3E5K0FnQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJhdVNFckw3VjdVQ3pjQXp3bTYwQ0FBIiwidmVyIjoiMS4wIn0.iQcTBJVLD_do5JxagtDo7_A3JSpqo7LrRCLkSiyzQI7U6aRIuRsAHTCaBOQZB7fMY8xJePxXP-52qM05KvhO3RLuGctp-dKUApNKur9rffO8ibZd_K-pwe57lU9MKR103ZjPEy1Uc3z8ugoNqIeHpo5WBSPZQKNuNIB7JUy7Zs7hoF88u-c25_D1h_izRJ3nEcuUiDy0jcdDYP9FeUd0xWKAlyLKDMEx-m01vAp3zuHhI290rIAdsXBEa7hVO89aMcxNpAc5OE5JZRpwujyNqrT38hP4rKNlypU3-UgZUiwb_C14YK70efgY51atJ-YomL9-a21n_brhX1TdFNrgUw
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The respone time is : 26 Milli seconds
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:47 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:27:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - D_Activity Type Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The Token Response time is:174 Milli seconds
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NTY4LCJuYmYiOjE1OTY1OTk1NjgsImV4cCI6MTU5NjYwMzQ2OCwiYWlvIjoiRTJCZ1lJaTNYU1I3cnpPa3hHVzZBK3RXR3laTkFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJRR2ZWR2NnbHhrZUV6d0hndURVQ0FBIiwidmVyIjoiMS4wIn0.Aoxk-Z-gaGqJ_rtKMhe7Rj-JlLnzKsBgBhCk9FMK_l9hrBxgsQf3BHZJ_JGSxsP9EoitKdFfC9EyCIKXeP4Wmb06ILWZh8vxfcqNwm7398cTe-Ozp69EP8HAL_rAJQOkNZTVSJdeag2bU8TPEbHg1myMttRMcAHOLa-3t1_hVcUyK0RDW63eXUGNYX_fzoOP4RTZ5ZrPWJz6WL12ykdGAyGa-jGaTeJdsPafbO6Y-MTgrYR5-Dkq0R8ir884XyzNDN5t68IIZmOtDgFtmJ8WOp8Yh1hSXbStG6v8fVZYbjqAP8BJ7GvXO1fSFxaIgHN39rkAjFCRXpsVtGNqtW9SGw
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The respone time is : 37 Milli seconds
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:48 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:27:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:49 INFO  TestLogger:187 - The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:27:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:49 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:27:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:49 INFO  TestLogger:187 - Converted API Response into key value pairs: D_BOM Master
+2020-Aug-05 09:27:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:49 INFO  TestLogger:187 - sql query is :select * from ICMPCM.D_BOM_MST
+2020-Aug-05 09:27:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:50 INFO  TestLogger:187 - The S.No of test case executed is :5 & Testcase id is: 5302 & Number of Repetaion: 1
+2020-Aug-05 09:27:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:27:50 ERROR TestLogger:33 - D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1
+2020-Aug-05 09:27:50 INFO  TestLogger:187 - The api response key value pairs count is not machting with the db result key value pairs
+2020-Aug-05 09:27:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:24 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 09:29:24 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:24 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:29:24 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:24 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:29:24 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:24 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC
+2020-Aug-05 09:29:24 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:27 INFO  TestLogger:187 - The Token Response time is:1214 Milli seconds
+2020-Aug-05 09:29:27 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:27 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:29:27 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NjY3LCJuYmYiOjE1OTY1OTk2NjcsImV4cCI6MTU5NjYwMzU2NywiYWlvIjoiRTJCZ1lEakwzeUVZVnRrV21IY3RVZlhWRlk0WEFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJ3cEM0cU92WEUwR0xZekRtLW13RkFBIiwidmVyIjoiMS4wIn0.zu1DjJWReh62y64D3PIBEwrBv3eOi4AxcjpIrNB2QzTOebyAbftR5mJBgtPh7JnvmHCuyF40fbJ6yOUS7UhEm5Xs-wAQ7ojZIMDlkIZIUA1Ybp7ycR_Ce9gn1yfmF0WKapQquIRrmEZAxV-4jJ8tkCnpklaZIFSuOK2k9oXyw7q48nt-DCMOewVZvDQoboJAdF4hH2LwHBA_-pn5lBoCukn_CS11weJNkoMybksGqycJKXRu00VzKuKovGjgPUL2odWA1CBxTG-NF3lHLvZ2STmbj_IEQ-3wsfI_p03ye1GKCSLS1lsObEfJ64LC-N8nyj_Xor_5_CzyZABRBTwrTw
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - The respone time is : 199 Milli seconds
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - D_Accounting Period Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:28 INFO  TestLogger:187 - Parameterized Json Request Body is :: SCE_SYS_COD
+2020-Aug-05 09:29:28 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The Token Response time is:173 Milli seconds
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NjY5LCJuYmYiOjE1OTY1OTk2NjksImV4cCI6MTU5NjYwMzU2OSwiYWlvIjoiRTJCZ1lHaHlMclROOGl2NmVVdGNvbXZDUHROMEFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJaY3lzX3NFVHgweVoyYlpUd21JQ0FBIiwidmVyIjoiMS4wIn0.gZLT50Z9Bvb7CyoE-DxC5Pgp815c64vDLlKBW1U04JuFZcL_n8Z1IaDFNDATrrh7cxTCeSf2U5UyWd5COKVN2mNKCyFNUuxMUVvGNlmFO3AnqqDb35E-Jl7KHS_s1q1JXiWfFhPH_vEQ1s3VTaeaPLvB83HO7pT4ee-TBmhr1KNwetBVyrDkf90gez-BOm07su8c0mh8qct5KzRp7WJaxJ77lKlVjvTVlQEcki9DribU6yLI_TtwLwnsFalZmeJgaNH9yJH-xOM_g8LCasPPfPCGvsFzKCX3jGFqjiLzeAMMRzTBrlypF1VUsx6QKnLQ2JuHktY8jvphHmSn_jcT4w
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The respone time is : 46 Milli seconds
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:29 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:29:29 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - D_Aging Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The Token Response time is:280 Milli seconds
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:30 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NjcwLCJuYmYiOjE1OTY1OTk2NzAsImV4cCI6MTU5NjYwMzU3MCwiYWlvIjoiRTJCZ1lQaDVpV25TZHVPYVdkbFg1VjZ3K3E2YkJBQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiItTVFPTnZTWUZrLUtpUGxTdkZJQ0FBIiwidmVyIjoiMS4wIn0.guvgffuRi9EJbKTbBD3ATNf_u8EQIQEem0_qSFzkqfE-aMf70ZiEbRadptdZHYn3Ny97Sc1Exsy-HGYhLMhefbPvs7GVINsV7WiXTp_p5W9td5kFseJj_WuyNsZTrYc312Q4XNj8xwYzJFt-Q43qpBrzmnHEyN2ORJ9V2KuqfwR6nwI1_oacLKLoSw9k6JpdNvnH5RYSbQE-Anghf5h9llbZDed6ckVHn7IM8UIUbq3jlATnDofOnQ2JEiwepxW_rniAVFGH6NL1yLO-lifzy-cRMTIeq5MclkTh_7q2_fucxxT3YRITdGjjXFjCkPHM7N1H_qp6msm37CgHtUOG2g
+2020-Aug-05 09:29:30 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The respone time is : 34 Milli seconds
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - D_Activity Type Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The Token Response time is:179 Milli seconds
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:31 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NTk5NjcxLCJuYmYiOjE1OTY1OTk2NzEsImV4cCI6MTU5NjYwMzU3MSwiYWlvIjoiRTJCZ1lOQXplUzkxczR0SC92YVA1U3JiOGhqVUFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJZSUVJNHQ1WWMwMndwSWtCUmtrQ0FBIiwidmVyIjoiMS4wIn0.dLUHSw-sHfrZdFRlqYo5sqY-El4ck5NEpirQKREC0loHbDbh_vzDF-3R1qY2az1scg9m52_r9-CSDzsiGpNQSFCiF9Ey5-TIqH6RVWe-DeuG1LPp7mGqQOp66lZLgg0ojb0grHWZqIEGgmVZIox_95Lq-9uiIe90usGBemEPiozftZ0rza8LjZYo2ccDEz3UfDZzid5kvBFF6DZjNW_dLe31jRlHKQfkWQbwAZ3hOMIpe8KW169nUGGM_5dyMKTGuQpAHW9si_54Pf8IRjfY0f203ZMMWxlh6j_fcGUdDri9HW5W-dHTgcb26R09UnYOPPaxcl6IlkDS-vU0p3u9zQ
+2020-Aug-05 09:29:31 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - The respone time is : 29 Milli seconds
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - Converted API Response into key value pairs: D_BOM Master
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:32 INFO  TestLogger:187 - sql query is :select * from ICMPCM.D_BOM_MST
+2020-Aug-05 09:29:32 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:33 INFO  TestLogger:187 - The S.No of test case executed is :5 & Testcase id is: 5302 & Number of Repetaion: 1
+2020-Aug-05 09:29:33 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 09:29:33 ERROR TestLogger:33 - D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1
+2020-Aug-05 09:29:33 INFO  TestLogger:187 - The api response key value pairs count is not machting with the db result key value pairs
+2020-Aug-05 09:29:33 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:43 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 10:32:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:43 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 10:32:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:43 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:32:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:43 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC
+2020-Aug-05 10:32:43 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:46 INFO  TestLogger:187 - The Token Response time is:1099 Milli seconds
+2020-Aug-05 10:32:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:46 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:32:46 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjAzNDY2LCJuYmYiOjE1OTY2MDM0NjYsImV4cCI6MTU5NjYwNzM2NiwiYWlvIjoiRTJCZ1lMQ0oybFE0VFlodmFiMlA0YjdhaWhXNkFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJmem0yUjFsR3kwRzlySWpUdkJNRUFBIiwidmVyIjoiMS4wIn0.dnT4rtcUNFPzmrA_Yoahou9npPhFmX9qIs1gDnpWcn_20uqqUvsKaWmZmAWlCVEY8lXWMLjwX2rU5RNkkbb-JnIUSotpG6A2MJXd0i3_tGh5TxYiv3p__5jlgjugj3KvDvd16VNOf2DzBAPA1Ey41cFJXmkqhUJMHk6y5luO-9wrivjxveEkhvpaWKC4SMUAGLkI2kTAmHVm116czYRKZaXb-Ynx-CIIAMxSScpIo39I1DqqvzFHYCa-TXtPmfGyqsJMMnZpa8HbHJjOoRxgtqisHPCdQFFn-eOWzxUAjpfX9HZYD---GaaqlGaGWtI3xitauZWvjq7JWsy5iA0jlA
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The respone time is : 217 Milli seconds
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - D_Accounting Period Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - Parameterized Json Request Body is :: SCE_SYS_COD
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The Token Response time is:190 Milli seconds
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:47 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:32:47 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjAzNDY3LCJuYmYiOjE1OTY2MDM0NjcsImV4cCI6MTU5NjYwNzM2NywiYWlvIjoiRTJCZ1lORDhsL2JzVnRNbk4vMFVoWE8xTWovdkF3QT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJYZUJLZmdPSnNFNlBYSWVsZ1U0REFBIiwidmVyIjoiMS4wIn0.j0ZVjX_kFtZm0vvfiJctSggnhUeZuIHa6uFLmiYHtIvDt7vsdCmVXNndNvLB0SYCkCHLZ1GJJzv15sSlkIF6KBCkCbjWqtvxUPzoOGOBqy8Rqej9Nu5Trz5vBrzYnDqIx4k2mciJheqWU2qpO5amKoghH6CvRXSEb8ZPHvCAyXu39Tpuyv-mHqW1SIWyn3pxLRYs_YPz02V9xkWNhhl9yZgPEimrkp21m4tCmJXw3kpXAfJAjn4YOCVQ0LRdMojh_g4jnWkzN3O7PPULoojYN1zjyqZJNM5Ik1Aoq7pg5tB6SxfiKD_asyxxi5_yLly_wkDihULxbR1UlpQdnwf-hw
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The respone time is : 28 Milli seconds
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - D_Aging Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The Token Response time is:170 Milli seconds
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:48 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:32:48 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjAzNDY4LCJuYmYiOjE1OTY2MDM0NjgsImV4cCI6MTU5NjYwNzM2OCwiYWlvIjoiRTJCZ1lGZ2NMZk9Tc1dXSlFaeU50T25lWGR1akFRPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJQQkkteGVhTVBFT0EtSGpIbnBnSUFBIiwidmVyIjoiMS4wIn0.aYqJ96uouAtTGDMrb_kY6R1HuWR0Qyk1tiVPLh1qK945L0lWQFvmArhzPANJBEx8dS41-gpypbPXkqA1mGepm6uL_C1_K5P1k0CQ1SRyb0Q3w6WzD5b51Kv4U9pD7RPMKbZlnN2cDlPCrYiE1EBNrzfRX6Ai4xteECoKC8coDwQqvMBhpsw-h4DZzKLio9kACAC5leTJjj6N5dgNhIPgrkV6pqKtM3FPJZ49o1pl_vcdDgW84waqXTt_cKn_vEqtls78Q8I7A-ItXcw2jQtpMd1AnLHXBTRHDEF83Gdifz8I19dZcZ1BwYvn1zhBD9K_S1MQqRyMMcgpmmvU5ifeWw
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The respone time is : 24 Milli seconds
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - D_Activity Type Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The Token Response time is:176 Milli seconds
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:49 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:32:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjAzNDY5LCJuYmYiOjE1OTY2MDM0NjksImV4cCI6MTU5NjYwNzM2OSwiYWlvIjoiRTJCZ1lHaHJuTDNMTDg1aTZzYVdOcllIZnVlVUFRPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiI3cUthNHVMNGxVYWdmNFZOUEwwR0FBIiwidmVyIjoiMS4wIn0.TidnP906aTWbmjEuNNAmkHJpGaIWAj71xDCyhrvYkTyAMR_OHeKgpj-4fMdrGaj5aNWH77isBsUUxldSKrkQ2_6IxHG4KQO1SbDuG9wHev-bJMIh2uMqEGY3yKqtBQCNvDO0wIJ3MeijoHnNfobunEFwK6H0rGnIUrSNlsFsx_PnrTmQQ5iP3rfsw6nuZIOhS0CEu_fqpBhC-isX2AX9K712D62wkWgNfz8Ik1Z72Vrz0HW3yyhAEvfvqfBzGQ3vBHOXFOnN3V7AzWw-xC_dXhRS411hEdSj0JPqSvGd4nPtRcBUBUsiV5jBMfxbuTXc27UKxnZBUksj8X5aee6FGA
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - The respone time is : 31 Milli seconds
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - Converted API Response into key value pairs: D_BOM Master
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:50 INFO  TestLogger:187 - sql query is :select * from ICMPCM.D_BOM_MST
+2020-Aug-05 10:32:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:52 INFO  TestLogger:187 - The S.No of test case executed is :5 & Testcase id is: 5302 & Number of Repetaion: 1
+2020-Aug-05 10:32:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:32:52 ERROR TestLogger:33 - D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1
+2020-Aug-05 10:32:52 INFO  TestLogger:187 - The api response key value pairs count is not machting with the db result key value pairs
+2020-Aug-05 10:32:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:49 INFO  TestLogger:187 - kSH Api services Execution has started
+2020-Aug-05 10:53:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:49 INFO  TestLogger:187 - The S.No of test case about to execute :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 10:53:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:49 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:53:49 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:49 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC
+2020-Aug-05 10:53:50 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:52 INFO  TestLogger:187 - The Token Response time is:992 Milli seconds
+2020-Aug-05 10:53:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:52 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:53:52 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjA0NzMyLCJuYmYiOjE1OTY2MDQ3MzIsImV4cCI6MTU5NjYwODYzMiwiYWlvIjoiRTJCZ1lBaFNhOW1vSzNBMG10bXdzVnJ2VDlFaEFBPT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJBU05fVjRDRkhVYThaS1NVMVhFRUFBIiwidmVyIjoiMS4wIn0.U9CUDuuawCzKMbq9rQpMbOeSMdXGVqBCbdw50Y0aIOtEWspXjW-ttvqO5Nn3DxHBP0VSBR-BL8rHalis12b-D05dznWBTsgN7BiQGfdV8JypwzuhKcD63ft7hHxfd1LjyfiRXBr6GecRxWT4gGJ-jaDI8sQY-J8h4AnBTmyIO7cjDzwDhG1RxWxZlfvXKuZSnIrR9GDkwGaWSK6M3_4m8-crTJ5LrBhEVX1AXIUOm2NWtbBsGvZuMSHeIBUdcldYk2g8v8K76miuO9aZ8TS70-Ibv_RiSMRbueyGuH_jF5VhQNAbJUXU8JD2xA_QYfBgeF2dQWkiIYwuUZpY68W5rg
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The respone time is : 190 Milli seconds
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The S.No of test case executed is :1 &  Testcase id is: 5298 &  Number of repetation 1
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - D_Accounting Period Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The S.No of test case about to execute :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - Parameterized Json Request Body is :: {{SCE_SYS_COD}}
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:53 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC
+2020-Aug-05 10:53:53 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The Token Response time is:225 Milli seconds
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjA0NzM0LCJuYmYiOjE1OTY2MDQ3MzQsImV4cCI6MTU5NjYwODYzNCwiYWlvIjoiRTJCZ1lJamJlOW8xa0xjdnV2TG5lbk91czlNT0FBQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJmRDE1cjQ2RHJVU2pBSkU3SlVBRUFBIiwidmVyIjoiMS4wIn0.QRfxlLipKX7wTnIWuxIsvdkEEDZbJmqE3K7NtiZcleqrlkxfWcIFifWrm_UaILIdevvy0gpfs8EuuJd4KzQauTSAR1tyDqhuLzbrPKEa-FWOd7QNUK7LoUOCvRzySDCeu47MjxDGvUWsfLQFtmx4EPUJeMm2AzfDHz6fIxHnwhjw2jSdZAFxKMVxrdNXEYLbUo-2GO4ALw9A9sOnVqSuiFthosZTr2s24xpCno2wDod89oed75RxoE06hjSdmFsM6D8LGW4dSiqUIjlyq7IPeU4Ph1yzpkKDmHaNLw1EcD36o-7CJoFr0f6SYEXtSWBSnt2YlwgtgkkU5rjQBdpV4A
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The respone time is : 33 Milli seconds
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The S.No of test case executed is :2 &  Testcase id is: 5299 &  Number of repetation 1
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - D_Aging Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The S.No of test case about to execute :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:54 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC
+2020-Aug-05 10:53:54 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The Token Response time is:149 Milli seconds
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjA0NzM1LCJuYmYiOjE1OTY2MDQ3MzUsImV4cCI6MTU5NjYwODYzNSwiYWlvIjoiRTJCZ1lKaXVkc0J5U2ZEQnlqT3hpLzNyem9rcUF3QT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiJYS0xvbTUzdmtFbWY3TmtyclRrSUFBIiwidmVyIjoiMS4wIn0.NXCNmRsiXYxoY8GIVe1DTJ4Ka2fLE9ed7BAt0CYDsF0iWuJEWLsoYp24i1j9ekSIxcsoNKeC99ue7AD_5vYKjkG5JTDgCZvIaINtXZA9Ho3X3gLfK2ZGpBhGvE_YmmDLUA4NWKFVBBVaSt8mF7goz3M7PQv8SQd7TiFgbbTeX_EOQvMuCQozjeRGyr-AgPjQqfUWFxj-YkVFTyYhQN49MhW5qTemhqQxQl4GDOjRpTVWuHt48j93P2lcRhVl6_uN_TwoXNxfUKJkiLItnKDZkaIXkpqhSQfUBWuh5l-FS_ya7M2jd8rQWbzWnHePYXVpxLBbzVEM2Liah6ZOCW_emA
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The respone time is : 26 Milli seconds
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The S.No of test case executed is :4 &  Testcase id is: 5301 &  Number of repetation 1
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - D_Activity Type Respone code is  :200 VS Expected Response code is :200
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The S.No of test case about to execute :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - Parameterized Json Request Body is :: 
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:55 INFO  TestLogger:187 - The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC
+2020-Aug-05 10:53:55 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The Token Response time is:148 Milli seconds
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The Response status code for Token generation API is:200
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The Token generated sucessfully:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJhcGk6Ly9kOTBhM2ZkZS02MWE5LTQyMTQtYjE0Ny1jYzBkOTMzNTM4NWIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QvIiwiaWF0IjoxNTk2NjA0NzM2LCJuYmYiOjE1OTY2MDQ3MzYsImV4cCI6MTU5NjYwODYzNiwiYWlvIjoiRTJCZ1lHZytlenZ0VStJbWt4L3BMd3ZtN21ockFRQT0iLCJhcHBpZCI6ImQ5MGEzZmRlLTYxYTktNDIxNC1iMTQ3LWNjMGQ5MzM1Mzg1YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzM3MmVlOWUwLTljZTAtNDAzMy1hNjRhLWMwNzA3M2E5MWVjZC8iLCJvaWQiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJzdWIiOiIyZjdmMTEzOC02OGJlLTRkYTQtYjM0OC04NzE5ZGIzYWU1ODgiLCJ0aWQiOiIzNzJlZTllMC05Y2UwLTQwMzMtYTY0YS1jMDcwNzNhOTFlY2QiLCJ1dGkiOiIteE5QaHdkYzRVaTY1TGtyZy00REFBIiwidmVyIjoiMS4wIn0.H8X3uepgMBOEtAl8t0O0HtdCoaCdjWDB9JV3zzmcC5ccNuWcB3g0UVG_O2IbSxgyzoU6Zl8GfU_JIEOBb9yoUvPlkd54uETLeiKkjyomEF3515If7NpgHnkE5mls68P2KTk1szEVSxvzQ0a30-bO4sBsguGVnhW9_hl1b6riHFPQE1UY3Af5o0C6vT4V8DdnI1suwTs9N-SoVNL_p8n-gJ9EOLLFVdSiwH7CxPAkHr9QMIbDcqRsKj_uRHWPjHCTWhEM08Cb61Ta2SKCb7lGlRqykZIp-miXCLvTSuKiU3YoZ68mQ2MAuDiPBGZd2AsMS9JVaAsaYymNFcgRgPe-1w
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The respone time is : 28 Milli seconds
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The response status code for post request is :200
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - The S.No of test case executed is :5 &  Testcase id is: 5302 &  Number of repetation 1
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - Collected API Response into text files
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - Converted API Response into key value pairs: D_BOM Master
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:56 INFO  TestLogger:187 - sql query is :select * from ICMPCM.D_BOM_MST
+2020-Aug-05 10:53:56 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:58 INFO  TestLogger:187 - The S.No of test case executed is :5 & Testcase id is: 5302 & Number of Repetaion: 1
+2020-Aug-05 10:53:58 INFO  TestLogger:189 - **********************************************************
+2020-Aug-05 10:53:58 ERROR TestLogger:33 - D_BOM Master Respone code is  :200 VS Expected Response code is :200 &  Content of the API Response and DB Response both files are mismatched : D_BOM Master_s.no5_repeation_No1 VS D_BOM Master_s.no5_repeation_No1
+2020-Aug-05 10:53:58 INFO  TestLogger:187 - The api response key value pairs count is not machting with the db result key value pairs
+2020-Aug-05 10:53:58 INFO  TestLogger:189 - **********************************************************
