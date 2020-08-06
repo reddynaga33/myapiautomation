@@ -14,13 +14,13 @@
       <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC]]>
     </line>
     <line>
-      <![CDATA[The Token Response time is:992 Milli seconds]]>
+      <![CDATA[The Token Response time is:1062 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The Response status code for Token generation API is:200]]>
     </line>
     <line>
-      <![CDATA[The respone time is : 190 Milli seconds]]>
+      <![CDATA[The respone time is : 187 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The response status code for post request is :200]]>
@@ -44,13 +44,13 @@
       <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC]]>
     </line>
     <line>
-      <![CDATA[The Token Response time is:225 Milli seconds]]>
+      <![CDATA[The Token Response time is:211 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The Response status code for Token generation API is:200]]>
     </line>
     <line>
-      <![CDATA[The respone time is : 33 Milli seconds]]>
+      <![CDATA[The respone time is : 31 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The response status code for post request is :200]]>
@@ -74,13 +74,13 @@
       <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC]]>
     </line>
     <line>
-      <![CDATA[The Token Response time is:149 Milli seconds]]>
+      <![CDATA[The Token Response time is:173 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The Response status code for Token generation API is:200]]>
     </line>
     <line>
-      <![CDATA[The respone time is : 26 Milli seconds]]>
+      <![CDATA[The respone time is : 27 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The response status code for post request is :200]]>
@@ -104,13 +104,13 @@
       <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC]]>
     </line>
     <line>
-      <![CDATA[The Token Response time is:148 Milli seconds]]>
+      <![CDATA[The Token Response time is:145 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The Response status code for Token generation API is:200]]>
     </line>
     <line>
-      <![CDATA[The respone time is : 28 Milli seconds]]>
+      <![CDATA[The respone time is : 24 Milli seconds]]>
     </line>
     <line>
       <![CDATA[The response status code for post request is :200]]>
@@ -128,16 +128,16 @@
       <![CDATA[The api response key value pairs count is not machting with the db result key value pairs]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-08-05T05:23:49Z" name="Suite" finished-at="2020-08-05T05:23:58Z" duration-ms="9133">
+  <suite started-at="2020-08-05T05:47:36Z" name="Suite" finished-at="2020-08-05T05:47:45Z" duration-ms="9051">
     <groups>
     </groups>
-    <test started-at="2020-08-05T05:23:49Z" name="Test" finished-at="2020-08-05T05:23:58Z" duration-ms="9133">
+    <test started-at="2020-08-05T05:47:36Z" name="Test" finished-at="2020-08-05T05:47:45Z" duration-ms="9051">
       <class name="com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:49Z" name="beforetest" finished-at="2020-08-05T05:23:49Z" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:47:36Z" name="beforetest" finished-at="2020-08-05T05:47:36Z" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:49Z" name="runtest" finished-at="2020-08-05T05:23:58Z" duration-ms="8371" status="PASS">
+        <test-method signature="runtest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:47:36Z" name="runtest" finished-at="2020-08-05T05:47:44Z" duration-ms="8200" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[kSH Api services Execution has started]]>
@@ -152,13 +152,13 @@
               <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPFM.D_ACG_PRD?limit=11&sortOrder=ASC]]>
             </line>
             <line>
-              <![CDATA[The Token Response time is:992 Milli seconds]]>
+              <![CDATA[The Token Response time is:1062 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The Response status code for Token generation API is:200]]>
             </line>
             <line>
-              <![CDATA[The respone time is : 190 Milli seconds]]>
+              <![CDATA[The respone time is : 187 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The response status code for post request is :200]]>
@@ -182,13 +182,13 @@
               <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_AGI?limit=11&sortOrder=ASC]]>
             </line>
             <line>
-              <![CDATA[The Token Response time is:225 Milli seconds]]>
+              <![CDATA[The Token Response time is:211 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The Response status code for Token generation API is:200]]>
             </line>
             <line>
-              <![CDATA[The respone time is : 33 Milli seconds]]>
+              <![CDATA[The respone time is : 31 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The response status code for post request is :200]]>
@@ -212,13 +212,13 @@
               <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_ATY_TYP?limit=1&sortOrder=ASC]]>
             </line>
             <line>
-              <![CDATA[The Token Response time is:149 Milli seconds]]>
+              <![CDATA[The Token Response time is:173 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The Response status code for Token generation API is:200]]>
             </line>
             <line>
-              <![CDATA[The respone time is : 26 Milli seconds]]>
+              <![CDATA[The respone time is : 27 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The response status code for post request is :200]]>
@@ -242,13 +242,13 @@
               <![CDATA[The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ksh-api/dias-API/IcmDataAPI/ICMPCM.D_BOM_MST?limit=1&sortOrder=ASC]]>
             </line>
             <line>
-              <![CDATA[The Token Response time is:148 Milli seconds]]>
+              <![CDATA[The Token Response time is:145 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The Response status code for Token generation API is:200]]>
             </line>
             <line>
-              <![CDATA[The respone time is : 28 Milli seconds]]>
+              <![CDATA[The respone time is : 24 Milli seconds]]>
             </line>
             <line>
               <![CDATA[The response status code for post request is :200]]>
@@ -267,7 +267,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runtest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:58Z" name="afterMethod" finished-at="2020-08-05T05:23:58Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:47:44Z" name="afterMethod" finished-at="2020-08-05T05:47:44Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -283,7 +283,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:23:58Z" name="aftertest" finished-at="2020-08-05T05:23:58Z" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@5aa9e4eb]" started-at="2020-08-05T05:47:44Z" name="aftertest" finished-at="2020-08-05T05:47:45Z" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->

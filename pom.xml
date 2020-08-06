@@ -29,7 +29,7 @@
 	        <configuration>
 	          <suiteXmlFiles>
 <!-- 	            <suiteXmlFile>C:\Users\qeadmin\Desktop\DIASApiAutomation\testng.xml</suiteXmlFile>
- -->	         <suiteXmlFile>C:\Users\qeadmin\Desktop\codepush\DIAS-TA-API\testng.xml</suiteXmlFile>
+ -->	         <suiteXmlFile>${suiteXMLFile}</suiteXmlFile>
 	            
 	          </suiteXmlFiles>
 	        </configuration>

@@ -23,7 +23,6 @@ import net.minidev.json.JSONObject;
 
 public class KshApiServicesExecutionPage  extends RestApiUtility{
 	
-
 	DatabaseUtility db = new DatabaseUtility();
 	InputData id = new InputData();
 	InputData id_1 = new InputData();
@@ -158,8 +157,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										TestLogger.testMessage(
 												"Converted API Response into key value pairs: " + id.api_name1.get(j));
 
-										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+
+									//	NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
+									//			+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -171,9 +171,12 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										TestLogger.testMessage("sql query is :" + sqlString);
 
 										List<Object> dbres = db.dbResult(sqlString);
+										
+										NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
 
-										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+
+									//	NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
+										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
 
@@ -325,8 +328,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 														response.asString());
 										List<Object> apiresponse = convertApiResponseTokeyValuePairs(response);
 
-										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+										//NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
+										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -339,8 +342,10 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 										List<Object> dbres = db.dbResult(sqlString);
 
-										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+									//	NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
+										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+										NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
+
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
 
@@ -424,6 +429,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										}
 
 										else {
+											
 											ExtentsReport.testInfo(
 													"The api response key value pairs count is not machting with the db result key value pairs");
 											TestLogger.errorMessage(
@@ -1352,7 +1358,6 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 		return var1;
 
 	}
-
 }
 	
 	
