@@ -101,7 +101,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 									ExtentsReport.testInfo(
 											"The Api respone time is : " + response.getTime() + " Milli seconds");
 
-									if (id.capature_output.get(i).equalsIgnoreCase("yes")) {
+									if (id.capature_output.get(j).equalsIgnoreCase("yes")) {
 
 										capatureResponseandPassToNextApi(id.response_datatype.get(i),response, 0, j,
 												id.field1_column.get(j + 1), id.field2_column.get(j + 1),
