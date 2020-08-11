@@ -22,7 +22,9 @@ import io.restassured.response.Response;
 import net.minidev.json.JSONObject;
 
 public class KshApiServicesExecutionPage  extends RestApiUtility{
-	
+
+
+
 	DatabaseUtility db = new DatabaseUtility();
 	InputData id = new InputData();
 	InputData id_1 = new InputData();
@@ -64,8 +66,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										+ id.s_no_column.get(j) + " &  Testcase id is: " + id.tc_id.get(j)
 										+ " &  Number of repetation " + counter_repeatation);
 								Reporter.log("The S.No of test case about to execute :" + id.s_no_column.get(j)
-										+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
-										+ counter_repeatation);
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ counter_repeatation);
 
 								jsonString = StringParameterization(id.meta_request_body.get(i),
 										id.field1_column.get(j), id.field2_column.get(j), id.field3_column.get(j),
@@ -78,6 +80,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 								String endPointUrl = metaInputEndpotintConcatnation(id.meta_endpoint.get(i),
 										id.endpoint_value.get(j));
+								//String endPointUrl=	endPointValueParameterization(id.meta_endpoint.get(i),id.endpoint_label.get(j),id.endpoint_value.get(j) );
+
 								String parmeterizedUrl = StringParameterization(endPointUrl, id.field1_column.get(j),
 										id.field2_column.get(j), id.field3_column.get(j), id.field4_column.get(j),
 										id.field5_column.get(j), id.value1_column.get(j), id.value2_column.get(j),
@@ -86,15 +90,15 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 								response = executeHttpRequest(parmeterizedUrl, jsonString, id.command.get(j));
 
 								ExtentsReport.startTest("The S.No of test case executed is :" + id.s_no_column.get(j)
-										+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
-										+ counter_repeatation);
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ counter_repeatation);
 
 								TestLogger.testMessage("The S.No of test case executed is :" + id.s_no_column.get(j)
-										+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
-										+ counter_repeatation);
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ counter_repeatation);
 								Reporter.log("The S.No of test case executed is :" + id.s_no_column.get(j)
-										+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
-										+ counter_repeatation);
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ counter_repeatation);
 
 								if (response.getStatusCode() == Integer.parseInt(id.expected_response_code.get(j))) {
 
@@ -130,10 +134,10 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 												+ id.expected_response_code.get(j));
 
 										NotepadWriter
-												.collectRespone(
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-																+ "_repeation_No" + counter_repeatation,
-														response.asString());
+										.collectRespone(
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
+												+ "_repeation_No" + counter_repeatation,
+												response.asString());
 
 										TestLogger.testMessage("Collected API Response into text files");
 										Reporter.log("Collected API Response into text files ");
@@ -144,10 +148,10 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 											& (!(id.meta_sql_query.get(i).isEmpty()))) {
 
 										NotepadWriter
-												.collectRespone(
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-																+ "_repeation_No" + counter_repeatation,
-														response.asString());
+										.collectRespone(
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
+												+ "_repeation_No" + counter_repeatation,
+												response.asString());
 
 										TestLogger.testMessage("Collected API Response into text files");
 										Reporter.log("Collected API Response into text files ");
@@ -158,8 +162,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 												"Converted API Response into key value pairs: " + id.api_name1.get(j));
 
 
-									//	NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-									//			+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
+												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -171,32 +175,32 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										TestLogger.testMessage("sql query is :" + sqlString);
 
 										List<Object> dbres = db.dbResult(sqlString);
-										
-										NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
+
+										////	NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
 
 
-									//	NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
+												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
 
 										FileComparisonHighlighter.compareFiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 
 										TextfileComparision.compareFiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 
 										Boolean comparetextfiles = NotepadWriter.compareTextfiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 
 										if (comparetextfiles) {
 
@@ -217,8 +221,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ " & Number of Repetaion:: " + counter_repeatation);
 
 											Reporter.log("The S.No of test case executed is :" + id.s_no_column.get(j)
-													+ " & Testcase id is: " + id.tc_id.get(j)
-													+ " & Number of Repetaion:: " + counter_repeatation);
+											+ " & Testcase id is: " + id.tc_id.get(j)
+											+ " & Number of Repetaion:: " + counter_repeatation);
 
 											Reporter.log(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
@@ -311,10 +315,10 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 												+ id.expected_response_code.get(j));
 
 										NotepadWriter
-												.collectRespone(
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-																+ "_repeation_No" + counter_repeatation,
-														response.asString());
+										.collectRespone(
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
+												+ "_repeation_No" + counter_repeatation,
+												response.asString());
 
 									}
 
@@ -322,14 +326,14 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 											& (!(id.meta_sql_query.get(i).isEmpty()))) {
 
 										NotepadWriter
-												.collectRespone(
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-																+ "_repeation_No" + counter_repeatation,
-														response.asString());
+										.collectRespone(
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
+												+ "_repeation_No" + counter_repeatation,
+												response.asString());
 										List<Object> apiresponse = convertApiResponseTokeyValuePairs(response);
 
-										//NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
+												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -342,9 +346,8 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 										List<Object> dbres = db.dbResult(sqlString);
 
-									//	NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-										//		+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
-										NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
+										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
+												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
 
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
@@ -352,19 +355,19 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										FileComparisonHighlighter.compareFiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 										TextfileComparision.compareFiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 
 										Boolean comparetextfiles = NotepadWriter.compareTextfiles(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
 														+ counter_repeatation,
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
-														+ counter_repeatation);
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+																+ counter_repeatation);
 										if (comparetextfiles) {
 											ExtentsReport.testFail(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
@@ -378,7 +381,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										} else {
 											NotepadWriter.collectRespone(
 													id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-															+ "_repeation_No" + counter_repeatation,
+													+ "_repeation_No" + counter_repeatation,
 													response.asString());
 
 											ExtentsReport.testInfo("The S.No of test case executed is :"
@@ -429,7 +432,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										}
 
 										else {
-											
+
 											ExtentsReport.testInfo(
 													"The api response key value pairs count is not machting with the db result key value pairs");
 											TestLogger.errorMessage(
@@ -627,11 +630,16 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 	}
 
+
+
+
+
+	
+
 	/*
 	 * This method is used to concat the metadata file endpoint with inputdata file
-	 * Endpoint value
 	 * 
-	 * @Param meataEndpoint :End point point API Servicein meata data file
+	 * @Param meataEndpoint :End point point API Service in meta data file
 	 * 
 	 * @Param inputEndpoint : End point value in input data file
 	 * 
@@ -657,15 +665,33 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 		return tempinputEndpoint;
 	}
 
-	public String capaturerResponseOutput(Response response, int listindex, String capature1_key) {
+	/*This method is used to capture the  key value from api response
+	 * @Param response:This is response of the api
+	 * @Param list index :This is the index of the response key to capture
+	 * @Param capture1_key :this is the key value given in capture column in input excel input data sheet
+	 * 
+	 */
+	public String captureResponseOutput(Response response, int listindex, String capture1_key) {
 
-		// public String capaturerResponseOutput(Response response,int listindex, String
-		// cap1,String cap2,String cap3, String cap4,String cap5) {
+		String var1=null;
+		try {
+			List<Map<String, String>> items = response.jsonPath().getList("$");
+			var1 = items.get(0).get(capture1_key);
 
-		List<Map<String, String>> items = response.jsonPath().getList("$");
-		String var1 = items.get(0).get(capature1_key);
+			System.out.println(" the out put form list  is " + items.get(0).get(capture1_key));
 
-		System.out.println(" the out put form list  is " + items.get(0).get(capature1_key));
+		} catch (Exception e) {
+
+			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+			TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+					+ ",An exception occured while capaturing key value from  the response output : "
+					+ e.getMessage());
+			Reporter.log(" Method Name is : " + nameofCurrMethod
+					+ ",An exception occured while capaturing key value from  the response output: "
+					+ e.getMessage());
+		}
+
+
 		return var1;
 
 	}
@@ -719,648 +745,589 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 			String value_1, String value_2, String value_3, String value_4, String value_5, String key1, String key2,
 			String key3, String key4, String key5) {
 
-		if (output_datatype.equalsIgnoreCase("List")) {
+		try {
+			System.out.println("output_datatype is"+output_datatype);
+			if (output_datatype.equalsIgnoreCase("List")) {
 
-			if (!key1.isEmpty()) {
-				List<Map<String, String>> items = response.jsonPath().getList("$");
-				String capature1_value = items.get(listindex).get(key1);
 
+				if (!key1.isEmpty()) {
+					List<Map<String, String>> items = response.jsonPath().getList("$");
+					String capature1_value = items.get(listindex).get(key1);
+
+					if (!field_1.isEmpty()) {
+
+						if (key1.equals(value_1)) {
+
+							id.value1_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_2.isEmpty()) {
+
+						if (key1.equals(value_2)) {
+
+							id.value2_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_3.isEmpty()) {
+
+						if (key1.equals(value_3)) {
+
+							id.value3_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_4.isEmpty()) {
+
+						if (key1.equals(value_4)) {
+
+							id.value4_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_5.isEmpty()) {
+
+						if (key1.equals(value_5)) {
+
+							id.value5_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+				}
+			}
+
+			if (output_datatype.equalsIgnoreCase("Object")) {
+
+				if (!key1.isEmpty()) {
+
+					String capatured_object = response.jsonPath().getJsonObject(key1);
+					if (!field_1.isEmpty()) {
+
+						if (key1.equals(value_1)) {
+
+							id.value1_column.add(valueindex + 1, capatured_object);
+
+						}
+					}
+
+					if (!field_2.isEmpty()) {
+
+						if (key1.equals(value_2)) {
+
+							id.value2_column.add(valueindex + 1, capatured_object);
+
+						}
+					}
+					if (!field_3.isEmpty()) {
+
+						if (key1.equals(value_3)) {
+
+							id.value3_column.add(valueindex + 1, capatured_object);
+
+						}
+					}
+					if (!field_4.isEmpty()) {
+
+						if (key1.equals(value_4)) {
+
+							id.value4_column.add(valueindex + 1, capatured_object);
+
+						}
+					}
+					if (!field_5.isEmpty()) {
+
+						if (key1.equals(value_5)) {
+
+							id.value5_column.add(valueindex + 1, capatured_object);
+
+						}
+					}
+				}
+			}
+
+			if (output_datatype.equalsIgnoreCase("String")) {
 				if (!field_1.isEmpty()) {
+					// if(key1.equals(field_1)) {
 
-					if (key1.equals(value_1)) {
+					String stringoutput = response.asString(); //
+					System.out.println("the string output is "+stringoutput);
+					id.value1_column.add(valueindex + 1, stringoutput);
 
-						id.value1_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_2.isEmpty()) {
-
-					if (key1.equals(value_2)) {
-
-						id.value2_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_3.isEmpty()) {
-
-					if (key1.equals(value_3)) {
-
-						id.value3_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_4.isEmpty()) {
-
-					if (key1.equals(value_4)) {
-
-						id.value4_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_5.isEmpty()) {
-
-					if (key1.equals(value_5)) {
-
-						id.value5_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-			}
-		}
-
-		if (output_datatype.equalsIgnoreCase("Object")) {
-
-			if (!key1.isEmpty()) {
-
-				String capatured_object = response.jsonPath().getJsonObject(key1);
-				if (!field_1.isEmpty()) {
-
-					if (key1.equals(value_1)) {
-
-						id.value1_column.add(valueindex + 1, capatured_object);
-
-					}
-				}
-
-				if (!field_2.isEmpty()) {
-
-					if (key1.equals(value_2)) {
-
-						id.value2_column.add(valueindex + 1, capatured_object);
-
-					}
-				}
-				if (!field_3.isEmpty()) {
-
-					if (key1.equals(value_3)) {
-
-						id.value3_column.add(valueindex + 1, capatured_object);
-
-					}
-				}
-				if (!field_4.isEmpty()) {
-
-					if (key1.equals(value_4)) {
-
-						id.value4_column.add(valueindex + 1, capatured_object);
-
-					}
-				}
-				if (!field_5.isEmpty()) {
-
-					if (key1.equals(value_5)) {
-
-						id.value5_column.add(valueindex + 1, capatured_object);
-
-					}
 				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("String")) {
-			if (!field_1.isEmpty()) {
-				// if(key1.equals(field_1)) {
+			if (output_datatype.equalsIgnoreCase("List")) {
 
-				String stringouput = response.asString(); //
-				id.value1_column.add(valueindex + 1, stringouput);
+				if (!key2.isEmpty()) {
 
+					List<Map<String, String>> items = response.jsonPath().getList("$");
+					String capature1_value = items.get(listindex).get(key2);
+					if (!field_1.isEmpty()) {
+
+						if (key2.equals(value_1)) {
+
+							id.value1_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_2.isEmpty()) {
+
+						if (key2.equals(value_2)) {
+
+							id.value2_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+					if (!field_3.isEmpty()) {
+
+						if (key2.equals(value_3)) {
+
+							id.value3_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+					if (!field_4.isEmpty()) {
+
+						if (key2.equals(value_4)) {
+
+							id.value4_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+					if (!field_5.isEmpty()) {
+
+						if (key2.equals(value_5)) {
+
+							id.value5_column.add(valueindex + 1, capature1_value);
+
+						}
+					}
+
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("List")) {
+			if (output_datatype.equalsIgnoreCase("Object")) {
 
-			if (!key2.isEmpty()) {
+				if (!key2.isEmpty()) {
 
-				List<Map<String, String>> items = response.jsonPath().getList("$");
-				String capature1_value = items.get(listindex).get(key2);
-				if (!field_1.isEmpty()) {
+					String capatured_object = response.jsonPath().getJsonObject(key1);
 
-					if (key2.equals(value_1)) {
+					if (!field_1.isEmpty()) {
 
-						id.value1_column.add(valueindex + 1, capature1_value);
+						if (key2.equals(value_1)) {
 
+							id.value1_column.add(valueindex + 1, capatured_object);
+
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key2.equals(value_2)) {
+						if (key2.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capature1_value);
+							id.value2_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_3.isEmpty()) {
 
-					if (key2.equals(value_3)) {
+					if (!field_3.isEmpty()) {
 
-						id.value3_column.add(valueindex + 1, capature1_value);
+						if (key2.equals(value_3)) {
 
+							id.value3_column.add(valueindex + 1, capatured_object);
+
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key2.equals(value_4)) {
+						if (key2.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capature1_value);
+							id.value4_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key2.equals(value_5)) {
+						if (key2.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capature1_value);
+							id.value5_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("Object")) {
+			if (output_datatype.equalsIgnoreCase("List")) {
 
-			if (!key2.isEmpty()) {
+				if (!key3.isEmpty()) {
 
-				String capatured_object = response.jsonPath().getJsonObject(key1);
+					List<Map<String, String>> items = response.jsonPath().getList("$");
+					String capature1_value = items.get(listindex).get(key3);
+					if (!field_1.isEmpty()) {
 
-				if (!field_1.isEmpty()) {
+						if (key3.equals(value_1)) {
 
-					if (key2.equals(value_1)) {
+							id.value1_column.add(valueindex + 1, capature1_value);
 
-						id.value1_column.add(valueindex + 1, capatured_object);
-
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key2.equals(value_2)) {
+						if (key3.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capatured_object);
+							id.value2_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
+					if (!field_3.isEmpty()) {
 
-				if (!field_3.isEmpty()) {
+						if (key3.equals(value_3)) {
 
-					if (key2.equals(value_3)) {
+							id.value3_column.add(valueindex + 1, capature1_value);
 
-						id.value3_column.add(valueindex + 1, capatured_object);
-
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key2.equals(value_4)) {
+						if (key3.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capatured_object);
+							id.value4_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key2.equals(value_5)) {
+						if (key3.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capatured_object);
+							id.value5_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("List")) {
+			if (output_datatype.equalsIgnoreCase("Object")) {
 
-			if (!key3.isEmpty()) {
+				if (!key3.isEmpty()) {
 
-				List<Map<String, String>> items = response.jsonPath().getList("$");
-				String capature1_value = items.get(listindex).get(key3);
-				if (!field_1.isEmpty()) {
+					String capatured_object = response.jsonPath().getJsonObject(key1);
 
-					if (key3.equals(value_1)) {
+					if (!field_1.isEmpty()) {
 
-						id.value1_column.add(valueindex + 1, capature1_value);
+						if (key3.equals(value_1)) {
 
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key3.equals(value_2)) {
+						if (key3.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capature1_value);
+							id.value2_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_3.isEmpty()) {
 
-					if (key3.equals(value_3)) {
+					if (!field_3.isEmpty()) {
 
-						id.value3_column.add(valueindex + 1, capature1_value);
+						if (key3.equals(value_3)) {
 
+							id.value3_column.add(valueindex + 1, capatured_object);
+
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key3.equals(value_4)) {
+						if (key4.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capature1_value);
+							id.value4_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key3.equals(value_5)) {
+						if (key5.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capature1_value);
+							id.value5_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("Object")) {
+			if (output_datatype.equalsIgnoreCase("List")) {
 
-			if (!key3.isEmpty()) {
+				if (!key4.isEmpty()) {
 
-				String capatured_object = response.jsonPath().getJsonObject(key1);
+					List<Map<String, String>> items = response.jsonPath().getList("$");
+					String capature1_value = items.get(listindex).get(key3);
+					if (!field_1.isEmpty()) {
 
-				if (!field_1.isEmpty()) {
+						if (key4.equals(value_1)) {
 
-					if (key3.equals(value_1)) {
+							id.value1_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key3.equals(value_2)) {
+						if (key4.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capatured_object);
+							id.value2_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
+					if (!field_3.isEmpty()) {
 
-				if (!field_3.isEmpty()) {
+						if (key4.equals(value_3)) {
 
-					if (key3.equals(value_3)) {
+							id.value3_column.add(valueindex + 1, capature1_value);
 
-						id.value3_column.add(valueindex + 1, capatured_object);
-
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key4.equals(value_4)) {
+						if (key4.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capatured_object);
+							id.value4_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key5.equals(value_5)) {
+						if (key4.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capatured_object);
+							id.value5_column.add(valueindex + 1, capature1_value);
 
-					}
-				}
-
-			}
-		}
-
-		if (output_datatype.equalsIgnoreCase("List")) {
-
-			if (!key4.isEmpty()) {
-
-				List<Map<String, String>> items = response.jsonPath().getList("$");
-				String capature1_value = items.get(listindex).get(key3);
-				if (!field_1.isEmpty()) {
-
-					if (key4.equals(value_1)) {
-
-						id.value1_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_2.isEmpty()) {
-
-					if (key4.equals(value_2)) {
-
-						id.value2_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-				if (!field_3.isEmpty()) {
-
-					if (key4.equals(value_3)) {
-
-						id.value3_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-				if (!field_4.isEmpty()) {
-
-					if (key4.equals(value_4)) {
-
-						id.value4_column.add(valueindex + 1, capature1_value);
-
-					}
-				}
-
-				if (!field_5.isEmpty()) {
-
-					if (key4.equals(value_5)) {
-
-						id.value5_column.add(valueindex + 1, capature1_value);
-
+						}
 					}
 				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("Object")) {
+			if (output_datatype.equalsIgnoreCase("Object")) {
 
-			if (!key4.isEmpty()) {
+				if (!key4.isEmpty()) {
 
-				String capatured_object = response.jsonPath().getJsonObject(key1);
+					String capatured_object = response.jsonPath().getJsonObject(key1);
 
-				if (!field_1.isEmpty()) {
+					if (!field_1.isEmpty()) {
 
-					if (key4.equals(value_1)) {
+						if (key4.equals(value_1)) {
 
-						id.value1_column.add(valueindex + 1, capatured_object);
+							id.value1_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key4.equals(value_2)) {
+						if (key4.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capatured_object);
+							id.value2_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_3.isEmpty()) {
+					if (!field_3.isEmpty()) {
 
-					if (key4.equals(value_3)) {
+						if (key4.equals(value_3)) {
 
-						id.value3_column.add(valueindex + 1, capatured_object);
+							id.value3_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key4.equals(value_4)) {
+						if (key4.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capatured_object);
+							id.value4_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key4.equals(value_5)) {
+						if (key4.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capatured_object);
+							id.value5_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("List")) {
+			if (output_datatype.equalsIgnoreCase("List")) {
 
-			if (!key5.isEmpty()) {
-				List<Map<String, String>> items = response.jsonPath().getList("$");
-				String capature1_value = items.get(listindex).get(key1);
+				if (!key5.isEmpty()) {
+					List<Map<String, String>> items = response.jsonPath().getList("$");
+					String capature1_value = items.get(listindex).get(key1);
 
-				if (!field_1.isEmpty()) {
+					if (!field_1.isEmpty()) {
 
-					if (key5.equals(value_1)) {
+						if (key5.equals(value_1)) {
 
-						id.value1_column.add(valueindex + 1, capature1_value);
+							id.value1_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key5.equals(value_2)) {
+						if (key5.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capature1_value);
+							id.value2_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_3.isEmpty()) {
+					if (!field_3.isEmpty()) {
 
-					if (key5.equals(value_3)) {
+						if (key5.equals(value_3)) {
 
-						id.value3_column.add(valueindex + 1, capature1_value);
+							id.value3_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key5.equals(value_4)) {
+						if (key5.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capature1_value);
+							id.value4_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key5.equals(value_5)) {
+						if (key5.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capature1_value);
+							id.value5_column.add(valueindex + 1, capature1_value);
 
+						}
 					}
-				}
 
+				}
 			}
-		}
 
-		if (output_datatype.equalsIgnoreCase("Object")) {
+			if (output_datatype.equalsIgnoreCase("Object")) {
 
-			if (!key5.isEmpty()) {
+				if (!key5.isEmpty()) {
 
-				String capatured_object = response.jsonPath().getJsonObject(key1);
-				if (!field_1.isEmpty()) {
+					String capatured_object = response.jsonPath().getJsonObject(key1);
+					if (!field_1.isEmpty()) {
 
-					if (key5.equals(value_1)) {
+						if (key5.equals(value_1)) {
 
-						id.value1_column.add(valueindex + 1, capatured_object);
+							id.value1_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
-				if (!field_2.isEmpty()) {
+					if (!field_2.isEmpty()) {
 
-					if (key5.equals(value_2)) {
+						if (key5.equals(value_2)) {
 
-						id.value2_column.add(valueindex + 1, capatured_object);
+							id.value2_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_3.isEmpty()) {
+					if (!field_3.isEmpty()) {
 
-					if (key5.equals(value_3)) {
+						if (key5.equals(value_3)) {
 
-						id.value3_column.add(valueindex + 1, capatured_object);
+							id.value3_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_4.isEmpty()) {
+					if (!field_4.isEmpty()) {
 
-					if (key5.equals(value_4)) {
+						if (key5.equals(value_4)) {
 
-						id.value4_column.add(valueindex + 1, capatured_object);
+							id.value4_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
-				if (!field_5.isEmpty()) {
+					if (!field_5.isEmpty()) {
 
-					if (key5.equals(value_5)) {
+						if (key5.equals(value_5)) {
 
-						id.value5_column.add(valueindex + 1, capatured_object);
+							id.value5_column.add(valueindex + 1, capatured_object);
 
+						}
 					}
-				}
 
+				}
 			}
+
+
+		} catch (Exception e) {
+
+			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+			TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+					+ ",An exception occured while capaturing the response output and passing to next api: "
+					+ e.getMessage());
+			Reporter.log(" Method Name is : " + nameofCurrMethod
+					+ ",An exception occured while capaturing the response output and passing to next api: "
+					+ e.getMessage());
 		}
 
 	}
+
+
 
 	/*
-	 * This method is used to capture value for key from api response
-	 * 
-	 * @Param response this is response of the api
-	 * 
-	 * @Praram listindex this is index of the response if the response data type is
-	 * list
-	 * 
-	 * @Param cap1 this is capature 1 column(key) in the excel input data
-	 * 
-	 * @Param cap2 thsi is capature 2 column(key) in the excel input data
-	 * 
-	 * @Param cap3 this is capature 3 columnn(Key) in the excel input data
-	 * 
-	 * @Pram cap4 this is capture 4 column (key) in the excel input data
-	 * 
-	 * @Param capt5 this is capture 5 column(key) in the excel input data
-	 * 
-	 * 
+	 * This method is used to replace the string value with some other value
+	 * @Param endpoint: endpoint column in inputdata excel meta data file
+	 * @Param endpointlabel: end point label inputdata excel input data sheet
+	 * @Param endpointvalue:endpoint value label in input data excel input data sheet
 	 */
+	public String endPointValueParameterization(String endpoint,String endpointlabel,String endpointvalue ) {
 
-	public String ppassResponseOuputToNextApi(List<String> capatured_items, String field_1, String value_1,
-			String field_2, String value_2, String field_3, String value_3, String field_4, List<String> value4_column,
-			String field_5, String value_5, int number) {
+		String modifiedString = endpoint;
 
-		String value = null;
+		try {
 
-		if (!capatured_items.get(0).toString().isEmpty()) {
-			if (!field_1.isEmpty()) {
-				if (capatured_items.get(0).toString().equals(value_1)) {
-
-					InputData.value1_column.add(number + 1, capatured_items.get(0));
+			if (modifiedString.contains(endpointlabel)) {
+				if(!endpointvalue.isEmpty()) {
+					modifiedString = modifiedString.replace(endpointlabel,endpointvalue);
 
 				}
-
 			}
 
+		} catch (Exception e) {
+
+			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+			Reporter.log(" Method Name is : " + nameofCurrMethod
+					+ ",An exception occured while doing the endpoint value parameterization: " + e.getMessage());
+			TestLogger.errorMessage("An exception occured while doing the string parameterization: " + e.getMessage());
 		}
-
-		if (!capatured_items.get(1).toString().isEmpty()) {
-			if (!field_2.isEmpty()) {
-				if (capatured_items.get(1).toString().equals(value_1)) {
-
-				}
-
-			}
-
-		}
-
-		if (!capatured_items.get(2).toString().isEmpty()) {
-			if (!field_2.isEmpty()) {
-				if (capatured_items.get(2).toString().equals(value_1)) {
-
-				}
-
-			}
-		}
-
-		if (!capatured_items.get(3).toString().isEmpty()) {
-			if (!field_3.isEmpty()) {
-				if (capatured_items.get(3).toString().equals(value_1)) {
-
-				}
-
-			}
-		}
-		if (!capatured_items.get(4).toString().isEmpty()) {
-			if (!field_4.isEmpty()) {
-				if (capatured_items.get(4).toString().equals(value_1)) {
-
-				}
-
-			}
-
-		}
-		return value;
+		return modifiedString;
 
 	}
 
-	/*
-	 * This method is used to capture value for key from api response
-	 * 
-	 * @Param response this is response of the api
-	 * 
-	 * @Praram listindex this is index of the response if the response data type is
-	 * list
-	 * 
-	 * @Param cap1 this is capature 1 column(key) in the excel input data
-	 * 
-	 * @Param cap2 thsi is capature 2 column(key) in the excel input data
-	 * 
-	 * @Param cap3 this is capature 3 columnn(Key) in the excel input data
-	 * 
-	 * @Pram cap4 this is capture 4 column (key) in the excel input data
-	 * 
-	 * @Param capt5 this is capture 5 column(key) in the excel input data
-	 * 
-	 * 
-	 */
-	public String capaturerResponseOutput(Response response, int listindex, String cap1, String cap2, String cap3,
-			String cap4, String cap5) {
 
-		List<Map<String, String>> items = response.jsonPath().getList("$");
-		String var1 = items.get(0).get(cap1);
-
-		return var1;
-
-	}
 }
-	
-	
-	
+
+
+
 
 
