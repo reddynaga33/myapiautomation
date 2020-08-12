@@ -78,9 +78,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 								TestLogger.testMessage("Parameterized Json Request Body is :: " + jsonString);
 								Reporter.log("Parameterized Json Request Body is :: " + jsonString);
 
-								String endPointUrl = metaInputEndpotintConcatnation(id.meta_endpoint.get(i),
-										id.endpoint_value.get(j));
-								//String endPointUrl=	endPointValueParameterization(id.meta_endpoint.get(i),id.endpoint_label.get(j),id.endpoint_value.get(j) );
+								//String endPointUrl = metaInputEndpotintConcatnation(id.meta_endpoint.get(i),
+								//		id.endpoint_value.get(j));
+								String endPointUrl=	endPointValueParameterization(id.meta_endpoint.get(i),id.endpoint_label.get(j),id.endpoint_value.get(j) );
 
 								String parmeterizedUrl = StringParameterization(endPointUrl, id.field1_column.get(j),
 										id.field2_column.get(j), id.field3_column.get(j), id.field4_column.get(j),
