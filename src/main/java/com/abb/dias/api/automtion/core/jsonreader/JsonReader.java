@@ -29,41 +29,29 @@ public class JsonReader {
 			object = jsonParser.parse(reader);
 
 		} catch (ParseException e) {
-			
-			
-			
-			
+
+
+
+
 			ExtentsReport.getExtentTestObj().log(LogStatus.ERROR,
 					" An exception occured to while parsing the data into jsonformat: " + e.getMessage());
 			TestLogger.errorMessage(" An exception occured to while parsing the data into jsonformat: "  + e.getMessage());
 
-			
-/*
-			ExtentReport.geTestObj().log(Status.ERROR,
-					" An exception occured to while parsing the data into jsonformat: " + e.getMessage());
-			TestLogger.errorMessage(" An exception occured to while parsing the data into jsonformat: "  + e.getMessage());*/
+
 
 		} catch (FileNotFoundException e) {
 
-			
+
 			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 			ExtentsReport.getExtentTestObj().log(LogStatus.INFO,
-			"An exception occured in Method Nameis : " + nameofCurrMethod);
+					"An exception occured in Method Nameis : " + nameofCurrMethod);
 			ExtentsReport.getExtentTestObj().log(LogStatus.ERROR,
 					" An exception occured to while parsing the data into jsonformat: " + e.getMessage());
 			TestLogger.errorMessage(" An exception occured to while parsing the data into jsonformat: "  + e.getMessage());
 
-			
-			
-			
-			//String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-			//ExtentReport.geTestObj().log(Status.INFO,
-			//	"An exception occured in Method Nameis : " + nameofCurrMethod);
-			/*ExtentReport.geTestObj().log(Status.ERROR,
-					" An exception occured to while parsing the data into jsonformat: " + e.getMessage());
-			TestLogger.errorMessage(" An exception occured to while parsing the data into jsonformat: "  + e.getMessage());
 
-*/		}
+
+		}
 	}
 
 	/**
@@ -85,8 +73,8 @@ public class JsonReader {
 
 		} catch (Exception e) {
 
-			
-			
+
+
 			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 			ExtentsReport.getExtentTestObj().log(LogStatus.INFO,
 					"An exception occured in Method Nameis : " + nameofCurrMethod);
@@ -94,15 +82,9 @@ public class JsonReader {
 					" An exception occured to while getting json object from respective module: " + e.getMessage());
 			TestLogger.errorMessage(	" An exception occured to while getting json object from respective module: "  + e.getMessage());
 
-			
-			
 
-			/*String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-			ExtentReport.geTestObj().log(Status.INFO,
-					"An exception occured in Method Nameis : " + nameofCurrMethod);
-			ExtentReport.geTestObj().log(Status.ERROR,
-					" An exception occured to while getting json object from respective module: " + e.getMessage());
-			TestLogger.errorMessage(	" An exception occured to while getting json object from respective module: "  + e.getMessage());*/
+
+
 
 		}
 
@@ -126,7 +108,7 @@ public class JsonReader {
 			return values;
 		} catch (Exception e) {
 
-			
+
 			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 			ExtentsReport.getExtentTestObj().log(LogStatus.INFO,
 					"An exception occured in Method Nameis : " + nameofCurrMethod);
@@ -134,16 +116,9 @@ public class JsonReader {
 					" An exception occured did not find the key value of the json object: " + e.getMessage());
 			TestLogger.errorMessage( " An exception occured did not find the key value of the json object: "+ e.getMessage());
 
-			
-			
 
-			/*String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-			ExtentReport.geTestObj().log(Status.INFO,
-					"An exception occured in Method Nameis : " + nameofCurrMethod);
-			ExtentReport.geTestObj().log(Status.ERROR,
-					" An exception occured did not find the key value of the json object: " + e.getMessage());
-			TestLogger.errorMessage( " An exception occured did not find the key value of the json object: "+ e.getMessage());
-*/
+
+
 		}
 
 		return null;
@@ -164,10 +139,10 @@ public class JsonReader {
 				obj = parser.parse(requestbody.trim());
 				json = (JSONObject) obj;
 			} catch (ParseException e) {
-				
-				
-				
-				
+
+
+
+
 				String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 				ExtentsReport.getExtentTestObj().log(LogStatus.INFO,
 						"An exception occured in Method Nameis : " + nameofCurrMethod);
@@ -175,18 +150,11 @@ public class JsonReader {
 						" An exception occured to while parsing the converting requesting body to json: " + e.getMessage());
 				TestLogger.errorMessage(" An exception occured to while parsing the converting requesting body to json: "+ e.getMessage());
 
-				
-				
-				
 
-/*
-				String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-				ExtentReport.geTestObj().log(Status.INFO,
-						"An exception occured in Method Nameis : " + nameofCurrMethod);
-				ExtentReport.geTestObj().log(Status.ERROR,
-						" An exception occured to while parsing the converting requesting body to json: " + e.getMessage());
-				TestLogger.errorMessage(" An exception occured to while parsing the converting requesting body to json: "+ e.getMessage());
-*/
+
+
+
+
 
 			}
 		}

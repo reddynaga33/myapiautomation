@@ -8,34 +8,7 @@ import com.abb.dias.api.automation.core.report.ExtentsReport;
 
 //public class Hooks extends ExtentReport {
 public class Hooks extends ExtentsReport {
-	/*
-	public void beforeSuite() {
-		
-		System.out.println("before suite executed");
-	}
 	
-	@BeforeTest
-	public void beforeTest() {
-		
-		ExtentReport.configureReport();
-		
-	}
-	@AfterTest
-	public void afterTet() {
-		
-		ExtentReport.endTest();
-	}
-	public void afterSuite() {
-		
-		System.out.println("after suite executed");
-	}
-	
-	
-	
-	
-	
-*/	
-
 	
 
 	

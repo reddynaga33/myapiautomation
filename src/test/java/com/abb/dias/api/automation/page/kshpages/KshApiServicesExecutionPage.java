@@ -64,9 +64,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 								TestLogger.testMessage("The S.No of test case about to execute :"
 										+ id.s_no_column.get(j) + " &  Testcase id is: " + id.tc_id.get(j)
-										+ " &  Number of repetation " + counter_repeatation);
+										+ " &  Number of repetition " + counter_repeatation);
 								Reporter.log("The S.No of test case about to execute :" + id.s_no_column.get(j)
-								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetition "
 								+ counter_repeatation);
 
 								jsonString = StringParameterization(id.meta_request_body.get(i),
@@ -90,14 +90,14 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 								response = executeHttpRequest(parmeterizedUrl, jsonString, id.command.get(j));
 
 								ExtentsReport.startTest("The S.No of test case executed is :" + id.s_no_column.get(j)
-								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetition "
 								+ counter_repeatation);
 
 								TestLogger.testMessage("The S.No of test case executed is :" + id.s_no_column.get(j)
-								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetition "
 								+ counter_repeatation);
 								Reporter.log("The S.No of test case executed is :" + id.s_no_column.get(j)
-								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetation "
+								+ " &  Testcase id is: " + id.tc_id.get(j) + " &  Number of repetition "
 								+ counter_repeatation);
 
 								if (response.getStatusCode() == Integer.parseInt(id.expected_response_code.get(j))) {
@@ -121,7 +121,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 										ExtentsReport.testInfo("The S.No of test case executed is :"
 												+ id.s_no_column.get(j) + " &  Testcase id is: " + id.tc_id.get(j)
-												+ " &  Number of repetation " + counter_repeatation);
+												+ " &  Number of repetition " + counter_repeatation);
 										ExtentsReport.testPasedMessage(id.api_name1.get(j) + " Respone code is  :"
 												+ response.getStatusCode() + " VS Expected Response code is :"
 												+ id.expected_response_code.get(j));
@@ -136,7 +136,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										NotepadWriter
 										.collectRespone(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-												+ "_repeation_No" + counter_repeatation,
+												+ "_repetition_No" + counter_repeatation,
 												response.asString());
 
 										TestLogger.testMessage("Collected API Response into text files");
@@ -150,7 +150,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										NotepadWriter
 										.collectRespone(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-												+ "_repeation_No" + counter_repeatation,
+												+ "_repetition_No" + counter_repeatation,
 												response.asString());
 
 										TestLogger.testMessage("Collected API Response into text files");
@@ -163,7 +163,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 
 										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+												+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -176,30 +176,30 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 										List<Object> dbres = db.dbResult(sqlString);
 
-										////	NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation) ;
+										////	NotepadWriter.writerr(apiresponse,dbres,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation,id.api_name1.get(j) + "_s.no"+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation) ;
 
 
 										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+												+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation, "db");
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
 
 										FileComparisonHighlighter.compareFiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 
 										TextfileComparision.compareFiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 
 										Boolean comparetextfiles = NotepadWriter.compareTextfiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 
 										if (comparetextfiles) {
@@ -212,9 +212,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 
 											TestLogger.testMessage("The S.No of test case executed is :"
 													+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
@@ -229,9 +229,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 
 										} else {
 
@@ -243,9 +243,9 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mismatched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 											TestLogger.testMessage("The S.No of test case executed is :"
 													+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
 													+ " & Number of Repetaion: " + counter_repeatation);
@@ -254,17 +254,17 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mismatched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 											Reporter.log(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mismatched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 
 										}
 
@@ -300,13 +300,13 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 
 										ExtentsReport.testInfo("The S.No of test case executed is :"
 												+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
-												+ " & Number of repetation: " + counter_repeatation);
+												+ " & Number of repetition: " + counter_repeatation);
 										ExtentsReport.testFail(id.api_name1.get(j) + " Respone code is  :"
 												+ response.getStatusCode() + " VS Expected Response code is :"
 												+ id.expected_response_code.get(j));
 										TestLogger.testMessage("The S.No of test case executed is :"
 												+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
-												+ " & Number of repetation: " + counter_repeatation);
+												+ " & Number of repetition: " + counter_repeatation);
 										TestLogger.testMessage(id.api_name1.get(j) + " Respone code is  :"
 												+ response.getStatusCode() + " VS Expected Response code is :"
 												+ id.expected_response_code.get(j));
@@ -317,7 +317,7 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										NotepadWriter
 										.collectRespone(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-												+ "_repeation_No" + counter_repeatation,
+												+ "_repetition_No" + counter_repeatation,
 												response.asString());
 
 									}
@@ -328,12 +328,12 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										NotepadWriter
 										.collectRespone(
 												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-												+ "_repeation_No" + counter_repeatation,
+												+ "_repetition_No" + counter_repeatation,
 												response.asString());
 										List<Object> apiresponse = convertApiResponseTokeyValuePairs(response);
 
 										NotepadWriter.writerr(apiresponse, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "api");
+												+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation, "api");
 
 										String sqlString = StringParameterization(id.meta_sql_query.get(i),
 												id.field1_column.get(j), id.field2_column.get(j),
@@ -347,26 +347,26 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 										List<Object> dbres = db.dbResult(sqlString);
 
 										NotepadWriter.writerr(dbres, id.api_name1.get(j) + "_s.no"
-												+ id.s_no_column.get(j) + "_repeation_No" + counter_repeatation, "db");
+												+ id.s_no_column.get(j) + "_repetition_No" + counter_repeatation, "db");
 
 
 										List<Object> apires = convertApiResponseTokeyValuePairs(response);
 
 										FileComparisonHighlighter.compareFiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 										TextfileComparision.compareFiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 
 										Boolean comparetextfiles = NotepadWriter.compareTextfiles(
-												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+												id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 														+ counter_repeatation,
-														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repeation_No"
+														id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j) + "_repetition_No"
 																+ counter_repeatation);
 										if (comparetextfiles) {
 											ExtentsReport.testFail(id.api_name1.get(j) + " Respone code is  :"
@@ -374,47 +374,47 @@ public class KshApiServicesExecutionPage  extends RestApiUtility{
 													+ id.expected_response_code.get(j)
 													+ "  &  Content of the API Response and DB Response both files are matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 
 										} else {
 											NotepadWriter.collectRespone(
 													id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation,
+													+ "_repetition_No" + counter_repeatation,
 													response.asString());
 
 											ExtentsReport.testInfo("The S.No of test case executed is :"
 													+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
-													+ " & Number of repetation: " + counter_repeatation);
+													+ " & Number of repetition: " + counter_repeatation);
 											ExtentsReport.testFail(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mis matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 											TestLogger.testMessage("The S.No of test case executed is :"
 													+ id.s_no_column.get(j) + " & Testcase id is: " + id.tc_id.get(j)
-													+ " & Number of repetation: " + counter_repeatation);
+													+ " & Number of repetition: " + counter_repeatation);
 
 											TestLogger.errorMessage(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mis matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 											Reporter.log(id.api_name1.get(j) + " Respone code is  :"
 													+ response.getStatusCode() + " VS Expected Response code is :"
 													+ id.expected_response_code.get(j)
 													+ " &  Content of the API Response and DB Response both files are mis matched : "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation + " VS "
+													+ "_repetition_No" + counter_repeatation + " VS "
 													+ id.api_name1.get(j) + "_s.no" + id.s_no_column.get(j)
-													+ "_repeation_No" + counter_repeatation);
+													+ "_repetition_No" + counter_repeatation);
 
 										}
 
