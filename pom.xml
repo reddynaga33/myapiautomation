@@ -1,326 +1,317 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>DIASApiAutomationFramework</groupId>
-  <artifactId>DIASApiAutomation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
- 
-  <build>
-	  <plugins>
-	  
-	  <plugin>
-	     <groupId>org.apache.maven.plugins</groupId>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>DIASApiAutomationFramework</groupId>
+	<artifactId>DIASApiAutomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-         <artifactId>maven-compiler-plugin</artifactId>
+	<build>
+		<plugins>
 
-             <version>3.7.0</version>
-	      <configuration>
-	          
-	            <source>1.8</source>
-	            <target>1.8</target>
-	        </configuration>
-	      </plugin>
-	     
-	  
-	  
-	  <plugin>
-	        <groupId>org.apache.maven.plugins</groupId>
-	        <artifactId>maven-surefire-plugin</artifactId>
-	        <version>3.0.0-M3</version>
-	        <configuration>
-	          <suiteXmlFiles>
-<!-- 	            <suiteXmlFile>C:\Users\qeadmin\Desktop\DIASApiAutomation\testng.xml</suiteXmlFile>
- -->	         <suiteXmlFile>${suiteXMLFile}</suiteXmlFile>
-	            
-	          </suiteXmlFiles>
-	        </configuration>
-	      </plugin>
-	     
-	  </plugins>
+
+			
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-compiler-plugin</artifactId>
+
+				<version>3.7.0</version>
+				<configuration>
+
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+  
+
+    
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+				<testFailureIgnore>true</testFailureIgnore>
+				
+					<suiteXmlFiles>
+						<!-- <suiteXmlFile>C:\Users\qeadmin\Desktop\DIASApiAutomation\testng.xml</suiteXmlFile> -->
+						<suiteXmlFile>${suiteXMLFile}</suiteXmlFile>
+
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+            
+    
+			
+		</plugins>
 	</build>
 
-  
-  
-   <dependencies>
-<dependency>
 
-<groupId>log4j</groupId>
 
-<artifactId>log4j</artifactId>
+	<dependencies>
+		<dependency>
 
-<version>1.2.17</version>
+			<groupId>log4j</groupId>
 
-</dependency>
+			<artifactId>log4j</artifactId>
 
+			<version>1.2.17</version>
 
-<dependency>
+		</dependency>
 
-<groupId>org.testng</groupId>
 
-<artifactId>testng</artifactId>
+		<dependency>
 
-<version>6.14.3</version>
+			<groupId>org.testng</groupId>
 
-<!-- <scope>test</scope> -->
+			<artifactId>testng</artifactId>
 
+			<version>6.14.3</version>
 
-</dependency>
+			<!-- <scope>test</scope> -->
 
-<dependency>
 
-<groupId>org.springframework</groupId>
+		</dependency>
 
-<artifactId>spring-jdbc</artifactId>
+	
+		<dependency>
 
-<version>4.0.3.RELEASE</version>
+			<groupId>org.seleniumhq.selenium</groupId>
 
-</dependency>
-<dependency>
+			<artifactId>selenium-java</artifactId>
 
-<groupId>org.seleniumhq.selenium</groupId>
+			<version>3.141.59</version>
 
-<artifactId>selenium-java</artifactId>
+		</dependency>
 
-<version>3.141.59</version>
+		<dependency>
 
-</dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
 
-<dependency>
+			<artifactId>mssql-jdbc</artifactId>
 
-<groupId>com.microsoft.sqlserver</groupId>
+			<!-- <version>7.2.0.jre11</version> -->
 
-<artifactId>mssql-jdbc</artifactId>
 
-<!-- <version>7.2.0.jre11</version> -->
+			<version>7.0.0.jre8</version>
 
+		</dependency>
 
-<version>7.0.0.jre8</version>
+		<dependency>
 
-</dependency>
+			<groupId>net.sourceforge.jtds</groupId>
 
-<dependency>
+			<artifactId>jtds</artifactId>
 
-<groupId>net.sourceforge.jtds</groupId>
+			<version>1.3.1</version>
 
-<artifactId>jtds</artifactId>
+		</dependency>
+		<dependency>
 
-<version>1.3.1</version>
+			<groupId>com.jayway.jsonpath</groupId>
 
-</dependency>
-<dependency>
+			<artifactId>json-path</artifactId>
 
-<groupId>com.jayway.jsonpath</groupId>
+			<version>2.1.0</version>
 
-<artifactId>json-path</artifactId>
+		</dependency>
 
-<version>2.1.0</version>
+		<dependency>
 
-</dependency>
+			<groupId>io.rest-assured</groupId>
 
-<dependency>
+			<artifactId>json-schema-validator</artifactId>
 
-<groupId>io.rest-assured</groupId>
+			<version>3.3.0</version>
 
-<artifactId>json-schema-validator</artifactId>
+		</dependency>
 
-<version>3.3.0</version>
+		<dependency>
 
-</dependency>
+			<groupId>mysql</groupId>
 
-<dependency>
+			<artifactId>mysql-connector-java</artifactId>
 
-<groupId>mysql</groupId>
+			<version>8.0.11</version>
 
-<artifactId>mysql-connector-java</artifactId>
+		</dependency>
 
-<version>8.0.11</version>
+		<dependency>
 
-</dependency>
+			<groupId>io.rest-assured</groupId>
 
-<dependency>
+			<artifactId>rest-assured</artifactId>
 
-<groupId>io.rest-assured</groupId>
+			<version>3.3.0</version>
 
-<artifactId>rest-assured</artifactId>
+		</dependency>
 
-<version>3.3.0</version>
 
-</dependency>
+		<dependency>
 
+			<groupId>com.aventstack</groupId>
 
-<dependency>
+			<artifactId>extentreports</artifactId>
 
-<groupId>com.aventstack</groupId>
+			<version>3.1.2</version>
 
-<artifactId>extentreports</artifactId>
+		</dependency>
 
-<version>3.1.2</version>
+		<dependency>
 
-</dependency>
+			<groupId>com.relevantcodes</groupId>
 
-<dependency>
+			<artifactId>extentreports</artifactId>
 
-<groupId>com.relevantcodes</groupId>
+			<version>2.41.2</version>
 
-<artifactId>extentreports</artifactId>
+		</dependency>
 
-<version>2.41.2</version>
 
-</dependency>
+		<dependency>
 
+			<groupId>org.apache.poi</groupId>
 
-<dependency>
+			<artifactId>poi</artifactId>
 
-<groupId>org.apache.poi</groupId>
+			<version>4.0.0</version>
 
-<artifactId>poi</artifactId>
+		</dependency>
 
-<version>4.0.0</version>
+		<dependency>
 
-</dependency>
+			<groupId>org.apache.maven.plugins</groupId>
 
-<dependency>
+			<artifactId>maven-compiler-plugin</artifactId>
 
-<groupId>org.apache.maven.plugins</groupId>
+			<version>3.7.0</version>
 
-<artifactId>maven-compiler-plugin</artifactId>
+		</dependency>
 
-<version>3.7.0</version>
 
-</dependency>
+		<!-- <dependency> <groupId>org.apache.poi</groupId> <artifactId>poi-ooxml</artifactId> 
+			<version>4.0.0</version> </dependency> -->
 
 
-<!-- <dependency>
+		<dependency>
 
-<groupId>org.apache.poi</groupId>
+			<groupId>org.apache.poi</groupId>
 
-<artifactId>poi-ooxml</artifactId>
+			<artifactId>poi-ooxml-schemas</artifactId>
 
-<version>4.0.0</version>
+			<version>4.0.0</version>
 
-</dependency> -->
+		</dependency>
 
+		<dependency>
 
-<dependency>
+			<groupId>javax.mail</groupId>
 
-<groupId>org.apache.poi</groupId>
+			<artifactId>javax.mail-api</artifactId>
 
-<artifactId>poi-ooxml-schemas</artifactId>
+			<version>1.5.5</version>
 
-<version>4.0.0</version>
+		</dependency>
 
-</dependency>
 
-<dependency>
+		<dependency>
 
-<groupId>javax.mail</groupId>
+			<groupId>com.microsoft.azure</groupId>
 
-<artifactId>javax.mail-api</artifactId>
+			<artifactId>azure-servicebus</artifactId>
 
-<version>1.5.5</version>
+			<version>1.2.11</version>
 
-</dependency>
+		</dependency>
 
+		<dependency>
 
-<dependency>
+			<groupId>com.microsoft.azure</groupId>
 
-<groupId>com.microsoft.azure</groupId>
+			<artifactId>azure-mgmt-servicebus</artifactId>
 
-<artifactId>azure-servicebus</artifactId>
+			<version>1.19.0</version>
 
-<version>1.2.11</version>
+		</dependency>
 
-</dependency>
 
-<dependency>
+		<dependency>
 
-<groupId>com.microsoft.azure</groupId>
+			<groupId>com.microsoft.azure</groupId>
 
-<artifactId>azure-mgmt-servicebus</artifactId>
+			<artifactId>azure-client-authentication</artifactId>
 
-<version>1.19.0</version>
+			<version>1.6.5</version>
 
-</dependency>
+		</dependency>
 
+		<dependency>
+			<groupId>com.microsoft.azure</groupId>
 
-<dependency>
+			<artifactId>adal4j</artifactId>
 
-<groupId>com.microsoft.azure</groupId>
+			<version>1.3.0</version>
 
-<artifactId>azure-client-authentication</artifactId>
+		</dependency>
 
-<version>1.6.5</version>
+		<dependency>
 
-</dependency>
+			<groupId>org.codehaus.jackson</groupId>
 
-<dependency>
-<groupId>com.microsoft.azure</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
 
-<artifactId>adal4j</artifactId>
+			<version>1.9.13</version>
 
-<version>1.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180130</version>
+		</dependency>
 
-</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.5</version>
+		</dependency>
 
-<dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-joda</artifactId>
+			<version>2.9.8</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+			<version>3.0.0-M3</version> </dependency> -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
 
-<groupId>org.codehaus.jackson</groupId>
 
-<artifactId>jackson-mapper-asl</artifactId>
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.5.7</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+			<version>3.0.0-M3</version> </dependency> -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.8</version>
+		</dependency>
 
-<version>1.9.13</version>
 
-</dependency>
-<dependency>
-<groupId>org.json</groupId>
-<artifactId>json</artifactId>
-<version>20180130</version>
-</dependency>
+	</dependencies>
 
-<dependency>
-<groupId>com.fasterxml.jackson.core</groupId>
-<artifactId>jackson-core</artifactId>
-<version>2.9.5</version>
-</dependency>
-<dependency>
-<groupId>com.fasterxml.jackson.core</groupId>
-<artifactId>jackson-databind</artifactId>
-<version>2.9.5</version>
-</dependency>
 
-<dependency>
-<groupId>com.fasterxml.jackson.datatype</groupId>
-<artifactId>jackson-datatype-joda</artifactId>
-<version>2.9.8</version>
-</dependency>
-<!-- <dependency>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-surefire-plugin</artifactId>
-<version>3.0.0-M3</version>
-</dependency> -->
-  <dependency>
-    <groupId>com.googlecode.json-simple</groupId>
-    <artifactId>json-simple</artifactId>
-    <version>1.1</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
-
-
-<dependency>
-    <groupId>net.sourceforge.jexcelapi</groupId>
-    <artifactId>jxl</artifactId>
-    <version>2.5.7</version>
-</dependency>
-<!-- <dependency>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-surefire-plugin</artifactId>
-<version>3.0.0-M3</version>
-</dependency> -->
-<dependency>
-    <groupId>org.apache.commons</groupId>
-    <artifactId>commons-text</artifactId>
-    <version>1.8</version>
-</dependency>
-
-  
-   </dependencies>
 </project>

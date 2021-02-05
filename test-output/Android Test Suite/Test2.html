@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>TestNG:  Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 07 14:40:40 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17189 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.abb.dias.api.automation.test.kshtest.SuiteApiServiceExecutionTest.runtest()'><b>runtest</b><br>Test class: com.abb.dias.api.automation.test.kshtest.SuiteApiServiceExecutionTest<br>Parameters: ph<br/>
+<a href="#Output-1858751514" onClick='toggleBox("Output-1858751514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1858751514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1858751514">
+kSH Api services Execution has started<br/>
+The S.No of test case about to execute :12 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: <br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/<br/>
+The Token Response time is:1720 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 563 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :12 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+Get Roles Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :13 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation1",
+    "description": "Automation1",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:351 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 249 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :13 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Create Role Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :14 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation2",
+    "description": "Automation2",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:155 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 237 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :14 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Create Role Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :15 &  Testcase id is: 7948 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: {   
+    "description": "",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+        
+            ]
+}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:199 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 41 Milli seconds<br/>
+The response status code for post request is :400<br/>
+The S.No of test case executed is :15 &  Testcase id is: 7948 &  Number of repetition 1<br/>
+Update role Respone code is  :400 VS Expected Response code is :400<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :16 &  Testcase id is: 7947 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: {   
+    "description": "Automation1",
+    "members": [
+        "sheetal.arveti@in.abb.com","kundan.lal@in.abb.com"
+        
+            ]
+}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:169 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 453 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :16 &  Testcase id is: 7947 &  Number of repetition 1<br/>
+Update role Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :17 &  Testcase id is: 14 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: {   
+    "description": "Automation1",
+    "members": [
+        ""
+        
+            ]
+}<br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:144 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 51 Milli seconds<br/>
+The response status code for post request is :400<br/>
+The S.No of test case executed is :17 &  Testcase id is: 14 &  Number of repetition 1<br/>
+Update role Respone code is  :400 VS Expected Response code is :400<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :18 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: <br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:140 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 661 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :18 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Delete role Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+The S.No of test case about to execute :19 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Parameterized Json Request Body is :: <br/>
+The API URL is: http://dias-qe-r2.westeurope.cloudapp.azure.com/ph//api/role/Automation2<br/>
+The Token Response time is:143 Milli seconds<br/>
+The Response status code for Token generation API is:200<br/>
+The respone time is : 637 Milli seconds<br/>
+The response status code for post request is :200<br/>
+The S.No of test case executed is :19 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Delete role Respone code is  :200 VS Expected Response code is :200<br/>
+Collected API Response into text files <br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.abb.dias.api.automation.test.kshtest.SuiteApiServiceExecutionTest@7f8a9499</td></tr>
+</table><p>
+</body>
+</html>

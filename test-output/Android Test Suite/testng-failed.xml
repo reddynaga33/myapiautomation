@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Android Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <parameter name="testexecute" value="ksh"/>
+    <classes>
+      <class name="com.abb.dias.api.automation.test.kshtest.SuiteApiServiceExecutionTest">
+        <methods>
+          <include name="beforetest"/>
+          <include name="afterMethod"/>
+          <include name="aftertest"/>
+          <include name="runtest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.abb.dias.api.automation.test.kshtest.SuiteApiServiceExecutionTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Android Test Suite] -->

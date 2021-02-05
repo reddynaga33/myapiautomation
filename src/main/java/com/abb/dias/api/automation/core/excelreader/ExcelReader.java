@@ -20,7 +20,7 @@ public class ExcelReader {
 	int numberOfColumns;
 	String[] cellString = null;
 	String stringname = null;
-	static String fileLocation = EnvironmentManager.getExcelFileLcoation().trim();
+	//static String fileLocation = EnvironmentManager.getExcelFileLcoation().trim();
 	public static FileInputStream file2;
 	static Workbook workbook2;
 	static Sheet sh;
@@ -32,7 +32,7 @@ public class ExcelReader {
 			
 			//file = new FileInputStream(fileLocation);
 			
-			file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\phinput.xls");
+			file = new FileInputStream(System.getProperty("user.dir")+"//src//test//MergedKshAndPhInput.xls");
 		} catch (FileNotFoundException e) {
            Reporter.log("An exception occured find the input excel file location path " + e.getMessage());
 		   TestLogger.errorMessage("An exception occured while reading find the input excel location path " + e.getMessage());			

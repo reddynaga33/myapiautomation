@@ -1,0 +1,575 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 02 15:29:30 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>74 seconds (74191 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest.runtest()'><b>runtest</b><br>Test class: com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest<br>Parameters: ph<br/>
+<a href="#Output-103103526" onClick='toggleBox("Output-103103526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-103103526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-103103526">
+kSH Api services Execution has started<br/>
+The S.No of test case about to execute :454 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/<br/>
+Parameterized end point url  is :: /api/role/<br/>
+++++++The parameterized url ::++++++ /api/role/<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/<br/>
+The Token Response time is:2337 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 809 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :454 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+Get Roles Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :455 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation1",
+    "description": "Automation1",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:2167 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 771 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :455 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :456 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation2",
+    "description": "Automation2",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1389 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 679 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :456 &  Testcase id is: 7871 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :457 &  Testcase id is: 7872 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation2",
+    "description": "Automation2",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1177 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 810 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :457 &  Testcase id is: 7872 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :458 &  Testcase id is: 7873 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation3",
+    "description": "Automation3",
+    "members": [
+        ""
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1144 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 1011 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :458 &  Testcase id is: 7873 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :459 &  Testcase id is: 7874 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "TestRoleName",
+    "description": "",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1144 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 945 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :459 &  Testcase id is: 7874 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :462 &  Testcase id is: 7946 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "Automation2",
+    "description": "Automation2",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1150 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 694 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :462 &  Testcase id is: 7946 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :463 &  Testcase id is: 7875 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "name": "{{Role_Name}}",
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "name": "",
+    "description": "Role_description",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role<br/>
+Parameterized end point url  is :: /api/role<br/>
+++++++The parameterized url ::++++++ /api/role<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role<br/>
+The Token Response time is:1478 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 809 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :463 &  Testcase id is: 7875 &  Number of repetition 1<br/>
+Create Role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :465 &  Testcase id is: 7870 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:1065 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 790 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :465 &  Testcase id is: 7870 &  Number of repetition 1<br/>
+Get Role by name Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :466 &  Testcase id is: 7870 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation2<br/>
+++++++The parameterized url ::++++++ /api/role/Automation2<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation2<br/>
+The Token Response time is:1112 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 741 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :466 &  Testcase id is: 7870 &  Number of repetition 1<br/>
+Get Role by name Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :470 &  Testcase id is: 15 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:1188 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 715 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :470 &  Testcase id is: 15 &  Number of repetition 1<br/>
+Get Role by name Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :475 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation2<br/>
+++++++The parameterized url ::++++++ /api/role/Automation2<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation2<br/>
+The Token Response time is:1137 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 877 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :475 &  Testcase id is: 7869 &  Number of repetition 1<br/>
+Get Role by name Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :461 &  Testcase id is: 7948 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{   
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+        
+            ]
+}<br/>
+Parameterized Json Request Body is :: {   
+    "description": "",
+    "members": [
+        "sheetal.arveti@in.abb.com"
+        
+            ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:1553 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 687 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :461 &  Testcase id is: 7948 &  Number of repetition 1<br/>
+Update role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :467 &  Testcase id is: 7947 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{   
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+        
+            ]
+}<br/>
+Parameterized Json Request Body is :: {   
+    "description": "Automation1",
+    "members": [
+        "sheetal.arveti@in.abb.com","kundan.lal@in.abb.com"
+        
+            ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:945 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 687 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :467 &  Testcase id is: 7947 &  Number of repetition 1<br/>
+Update role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :468 &  Testcase id is: 14 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{   
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+        
+            ]
+}<br/>
+Parameterized Json Request Body is :: {   
+    "description": "Automation1",
+    "members": [
+        ""
+        
+            ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:1297 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 797 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :468 &  Testcase id is: 14 &  Number of repetition 1<br/>
+Update role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :469 &  Testcase id is: 7951 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{   
+    "description": "{{Role_Description}}",
+    "members": [
+        "{{Members}}"
+        
+            ]
+}<br/>
+Parameterized Json Request Body is :: {   
+    "description": "Automation1",
+    "members": [
+        ""
+        
+            ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:955 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 686 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :469 &  Testcase id is: 7951 &  Number of repetition 1<br/>
+Update role Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :471 &  Testcase id is: 7952 &  Number of repetition 1<br/>
+++++the parameterixdd body+++[
+	{ 
+		"AppId" : "{{App_ID}}",
+		"permissions" : [{{permissions}}]
+	}
+]<br/>
+Parameterized Json Request Body is :: [
+	{ 
+		"AppId" : "dias-system",
+		"permissions" : ["0150","0200","0201","0202","0250","0300","0301"]
+	}
+]<br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}/permissions<br/>
+Parameterized end point url  is :: /api/role/Automation1/permissions<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1/permissions<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1/permissions<br/>
+The Token Response time is:1094 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 658 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :471 &  Testcase id is: 7952 &  Number of repetition 1<br/>
+Granting permissions to role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :472 &  Testcase id is: 7956 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "addOrRemove": true,
+    "roles": [
+        "{{Role_Name}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "addOrRemove": true,
+    "roles": [
+        "Automation2"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/membership/{{User_ID}}<br/>
+Parameterized end point url  is :: /api/role/membership/manjunatha.m1@in.abb.com<br/>
+++++++The parameterized url ::++++++ /api/role/membership/manjunatha.m1@in.abb.com<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/membership/manjunatha.m1@in.abb.com<br/>
+The Token Response time is:897 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 636 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :472 &  Testcase id is: 7956 &  Number of repetition 1<br/>
+Update role Membership for specific user Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :473 &  Testcase id is: 7953 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "addOrRemove": true,
+    "roles": [
+        "{{Role_Name}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "addOrRemove": true,
+    "roles": [
+        "NonExistingRolename"
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/membership/{{User_ID}}<br/>
+Parameterized end point url  is :: /api/role/membership/manjunatha.m1@in.abb.com<br/>
+++++++The parameterized url ::++++++ /api/role/membership/manjunatha.m1@in.abb.com<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/membership/manjunatha.m1@in.abb.com<br/>
+The Token Response time is:1180 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 1066 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :473 &  Testcase id is: 7953 &  Number of repetition 1<br/>
+Update role Membership for specific user Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :474 &  Testcase id is: 7956 &  Number of repetition 1<br/>
+++++the parameterixdd body+++{
+    "addOrRemove": true,
+    "roles": [
+        "{{Role_Name}}"
+    ]
+}<br/>
+Parameterized Json Request Body is :: {
+    "addOrRemove": true,
+    "roles": [
+        ""
+    ]
+}<br/>
+++++the end point url before paramaterized+++/api/role/membership/{{User_ID}}<br/>
+Parameterized end point url  is :: /api/role/membership/manjunatha.m1@in.abb.com<br/>
+++++++The parameterized url ::++++++ /api/role/membership/manjunatha.m1@in.abb.com<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/membership/manjunatha.m1@in.abb.com<br/>
+The Token Response time is:989 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 895 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :474 &  Testcase id is: 7956 &  Number of repetition 1<br/>
+Update role Membership for specific user Respone code is  :401 VS Expected Response code is :400<br/>
+The S.No of test case about to execute :476 &  Testcase id is: 7955 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/membership/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/membership/all<br/>
+++++++The parameterized url ::++++++ /api/role/membership/all<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/membership/all<br/>
+The Token Response time is:1148 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 852 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :476 &  Testcase id is: 7955 &  Number of repetition 1<br/>
+Get role memberships ALL users Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :477 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation1<br/>
+++++++The parameterized url ::++++++ /api/role/Automation1<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation1<br/>
+The Token Response time is:1558 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 808 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :477 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Delete role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :478 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/Automation2<br/>
+++++++The parameterized url ::++++++ /api/role/Automation2<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/Automation2<br/>
+The Token Response time is:1099 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 1003 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :478 &  Testcase id is: 7949 &  Number of repetition 1<br/>
+Delete role Respone code is  :401 VS Expected Response code is :200<br/>
+The S.No of test case about to execute :479 &  Testcase id is: 7950 &  Number of repetition 1<br/>
+++++the parameterixdd body+++<br/>
+Parameterized Json Request Body is :: <br/>
+++++the end point url before paramaterized+++/api/role/{{Role_Name}}<br/>
+Parameterized end point url  is :: /api/role/DeleteRole<br/>
+++++++The parameterized url ::++++++ /api/role/DeleteRole<br/>
+The API URL is: https://genix-qe-r02.westeurope.cloudapp.azure.com/ph//api/role/DeleteRole<br/>
+The Token Response time is:1059 Milli seconds<br/>
+The Response status code for Token generation API is:401<br/>
+The respone time is : 1200 Milli seconds<br/>
+The response status code for post request is :401<br/>
+The S.No of test case executed is :479 &  Testcase id is: 7950 &  Number of repetition 1<br/>
+Delete role Respone code is  :401 VS Expected Response code is :404<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.abb.dias.api.automation.test.kshtest.KshApiServicesExecutionTest@6a78afa0</td></tr>
+</table><p>
+</body>
+</html>

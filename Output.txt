@@ -1,0 +1,1 @@
+select * from ICMPCM.D_ALM order by 1 asc OFFSET 0 ROWS Fetch first 10 rows ONLY

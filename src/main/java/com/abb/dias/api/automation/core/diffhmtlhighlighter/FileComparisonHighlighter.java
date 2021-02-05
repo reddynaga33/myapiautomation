@@ -32,7 +32,7 @@ public class FileComparisonHighlighter {
 		// Read both files with line iterator.
 		LineIterator file1 = null;
 		try {
-			file1 = FileUtils.lineIterator(new File(apiresultLocation + "\\" + fileOne + ".txt"), "utf-8");
+			file1 = FileUtils.lineIterator(new File(apiresultLocation + "\\" + fileOne + ".txt"));
 			//file1 = FileUtils.lineIterator(new File(apiresultLocation + "/" + fileOne + ".txt"), "utf-8");
 
 		} catch (IOException e) {
@@ -47,7 +47,7 @@ public class FileComparisonHighlighter {
 		}
 		LineIterator file2 = null;
 		try {
-			file2 = FileUtils.lineIterator(new File(dbresultLocation + "\\" + fileTwo + ".txt"), "utf-8");
+			file2 = FileUtils.lineIterator(new File(dbresultLocation + "\\" + fileTwo + ".txt"),"utf-8");
 			//file2 = FileUtils.lineIterator(new File(dbresultLocation + "/" + fileTwo + ".txt"), "utf-8");
 
 		} catch (IOException e) {

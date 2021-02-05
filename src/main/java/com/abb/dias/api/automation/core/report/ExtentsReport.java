@@ -18,6 +18,7 @@ public class ExtentsReport {
 	static  String htmlreportLocation=reader.getValuefromConfigExcel("htmlreport");
 	static ExtentReports report;
 	public static  ExtentTest test;
+	
 
 	public static ExtentReports getReportObj() {
 
@@ -28,6 +29,7 @@ public class ExtentsReport {
 	public static ExtentTest  getExtentTestObj(){
 		return test;
 	}
+	
 	/*
 	    * This method is used to configure the report before test execution starts
 	    */
@@ -35,6 +37,9 @@ public class ExtentsReport {
 	public static   ExtentReports configureReport() {
 		try {
 			report=new ExtentReports(new File(htmlreportLocation)+"\\ExtentReportResult.html");
+			report.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+			
+			
 			//report=new ExtentReports(new File(htmlreportLocation)+"/ExtentReportResult.html");
 		}
 		catch(Exception e){
@@ -64,6 +69,25 @@ public class ExtentsReport {
 					+ "An exception occured when logging fail status in report: " + e.getMessage());	
 		}
 	}
+	
+	/*
+	    * This method is used to log the Fail message in Report
+	    */
+	public static void testSkip(String methodName) {
+		try {
+			test.log(LogStatus.SKIP, methodName);
+		}
+		catch(Exception e) {
+
+			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+			TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+					+ "An exception occured when logging skip status in report: " + e.getMessage());
+			Reporter.log(" Method Name is : " + nameofCurrMethod
+					+ "An exception occured when logging skip status in report: " + e.getMessage());	
+		}
+	}
+	
+	
 	/*
 	    * This method is used to log test name  message in Report
 	    */

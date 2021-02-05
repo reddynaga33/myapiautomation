@@ -1,9 +1,14 @@
 package com.abb.dias.api.automation.core.txtfilewriter;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -24,7 +29,7 @@ public class NotepadWriter {
 	static String htmlreportlocation = reader.getValuefromConfigExcel("htmlreport");
 
 	/*
-	 * This method is sued to dele the existe reporting folders
+	 * This method is sued to delete the existing reporting folders
 	 * 
 	 */
 	public static void deleteResultfolder() {
@@ -149,152 +154,47 @@ public class NotepadWriter {
 	 * 
 	 * @Param whichResponse: This is wether to write api or db response
 	 * 
-	 * 
-	 * public static void writerr(List<Object> writeobjectapi,List<Object>
-	 * writeobjectdb, String apifileName,String dbfileName) {
-	 * 
-	 * //public static void writerr(List<Object> writeobject, String texfileName,
+	 * public static void writerr(List<Object> writeobject, String texfileName,
 	 * String whichResponse) {
 	 * 
-	 * FileWriter fwapi = null; FileWriter fwdb = null;
-	 * 
-	 * File apiresultfoldr = null; File dbresulfoldr = null; try {
+	 * FileWriter fw = null; File apiresultfoldr = null; File dbresulfoldr = null;
+	 * try {
 	 * 
 	 * apiresultfoldr = new File(apiresultLocation); dbresulfoldr = new
 	 * File(dbresultLocation); apiresultfoldr.mkdir(); dbresulfoldr.mkdir();
 	 * 
+	 * if (whichResponse.contains("api")) {
 	 * 
+	 * fw = new FileWriter(apiresultfoldr + "\\" + texfileName + ".txt"); //fw = new
+	 * FileWriter(apiresultfoldr + "/" + texfileName + ".txt");
 	 * 
+	 * for (int i = 0; i < writeobject.size(); i++) { fw.write(writeobject.get(i) +
+	 * "\r\n"); } } if (whichResponse.contains("db")) { fw = new
+	 * FileWriter(dbresulfoldr + "\\" + texfileName + ".txt"); //fw = new
+	 * FileWriter(dbresulfoldr + "/" + texfileName + ".txt");
 	 * 
-	 * //fw = new FileWriter(apiresultfoldr + "\\" + texfileName + ".txt"); fwapi =
-	 * new FileWriter(apiresultfoldr + "\\" + apifileName + ".txt"); fwdb = new
-	 * FileWriter(dbresulfoldr + "\\" + dbfileName + ".txt");
-	 * 
-	 * int apielementsize=writeobjectapi.size(); int
-	 * dbelementsize=writeobjectdb.size();
-	 * 
-	 * if(apielementsize==dbelementsize) {
-	 * 
-	 * for (int i = 0; i < writeobjectapi.size(); i++) {
-	 * 
-	 * if( writeobjectapi.get(i).equals(writeobjectdb.get(i))) {
-	 * fwapi.write(writeobjectapi.get(i) + "\r\n"); fwdb.write(writeobjectdb.get(i)
-	 * + "\r\n");
-	 * 
-	 * }
-	 * 
-	 * else { int apilength=writeobjectapi.get(i).toString().length(); int
-	 * dblength=writeobjectdb.get(i).toString().length();
-	 * 
-	 * if(dblength>apilength) {
-	 * 
-	 * 
-	 * if
-	 * (writeobjectdb.get(i).toString().contains(writeobjectapi.get(i).toString()))
-	 * {
-	 * 
-	 * String
-	 * extrastring=writeobjectdb.get(i).toString().substring(apilength,dblength);
-	 * 
-	 * boolean res= checkExtraStringPatternMatch(extrastring); if (res) { //to do
-	 * error log writeobjectdb.get(i);
-	 * 
-	 * fwapi.write(writeobjectdb.get(i) + "\r\n"); fwdb.write(writeobjectdb.get(i) +
-	 * "\r\n");
-	 * 
-	 * 
-	 * } }
-	 * 
-	 * if(dblength<apilength) {
-	 * 
-	 * if
-	 * (writeobjectapi.get(i).toString().contains(writeobjectdb.get(i).toString()))
-	 * {
-	 * 
-	 * String
-	 * extrastring=writeobjectapi.get(i).toString().substring(dblength,apilength);
-	 * 
-	 * boolean res= checkExtraStringPatternMatch(extrastring); if (res) { //to do
-	 * error log writeobjectdb.get(i);
-	 * 
-	 * fwapi.write(writeobjectapi.get(i) + "\r\n"); fwdb.write(writeobjectapi.get(i)
-	 * + "\r\n");
-	 * 
-	 * 
-	 * }
-	 * 
-	 * 
-	 * }
-	 * 
-	 * else {
-	 * 
-	 * fwapi.write(writeobjectapi.get(i) + "\r\n");
-	 * 
-	 * fwdb.write(writeobjectdb.get(i) + "\r\n");
-	 * 
-	 * 
-	 * // Pattern not matached }
-	 * 
-	 * 
-	 * }
-	 * 
-	 * 
-	 * }
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * }
-	 * 
-	 * }}
-	 * 
-	 * else { for (int i = 0; i < writeobjectapi.size(); i++) {
-	 * 
-	 * fwapi.write(writeobjectapi.get(i) + "\r\n");
-	 * 
-	 * }
-	 * 
-	 * 
-	 * for (int i = 0; i < writeobjectdb.size(); i++) {
-	 * 
-	 * fwapi.write(writeobjectdb.get(i) + "\r\n");
-	 * 
-	 * }
-	 * 
-	 * 
-	 * 
-	 * }
-	 * 
-	 * 
-	 * 
-	 * 
-	 * } catch (Exception e) {
-	 * 
-	 * 
+	 * for (int i = 0; i < writeobject.size(); i++) { fw.write(writeobject.get(i) +
+	 * "\r\n"); } } } catch (Exception e) {
 	 * 
 	 * String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
-	 * +" An exception occued while wirting the list of items into text file:" +
-	 * e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod
-	 * +"An exception occued while wirting the list of items into text file: " +
+	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod +
+	 * " An exception occued while wirting the list of items into text file:" +
+	 * e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod +
+	 * "An exception occued while wirting the list of items into text file: " +
 	 * e.getMessage());
 	 * 
-	 * 
-	 * 
-	 * } finally { try { fwapi.close(); fwdb.close(); } catch (IOException e) {
-	 * 
+	 * } finally { try { fw.close(); } catch (IOException e) {
 	 * 
 	 * String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
-	 * +" An exception occued while wirting the list of items into text file:" +
-	 * e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod
-	 * +"An exception occued while wirting the list of items into text file: " +
+	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod +
+	 * " An exception occued while wirting the list of items into text file:" +
+	 * e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod +
+	 * "An exception occued while wirting the list of items into text file: " +
 	 * e.getMessage());
 	 * 
 	 * } } }
-	 * 
 	 */
+	
 	
 	/*
 	 * This method is sued to write the list object of items into text file
@@ -305,7 +205,78 @@ public class NotepadWriter {
 	 * 
 	 * @Param whichResponse: This is wether to write api or db response
 	 */
-	public static void writerr(List<Object> writeobject, String texfileName, String whichResponse) {
+	public static void writerr(List<String> writeobject, String texfileName, String whichResponse) {
+		//FileWriter fw1 = new FileWriter("filename.txt", Charset.forName("utf-8"));
+		FileWriter fw = null;
+		File apiresultfoldr = null;
+		File dbresulfoldr = null;
+		try {
+        //  System.out.println("size of the list object is::"+writeobject.get(0));
+			apiresultfoldr = new File(apiresultLocation);
+			dbresulfoldr = new File(dbresultLocation);
+			apiresultfoldr.mkdir();
+			dbresulfoldr.mkdir();
+			  System.out.println("ddddddddddddddddddddd"+writeobject.toString()); 
+			  
+		
+
+			if (whichResponse.contains("api")) {
+
+				 fw = new FileWriter(apiresultfoldr + "\\" + texfileName + ".txt");
+				//fw = new FileWriter(apiresultfoldr + "/" + texfileName + ".txt");
+				 if(writeobject.toString().equals("[]")) {
+					 fw.write(writeobject.toString()+ "\r\n");
+						
+					}
+				 else {
+				for (int i = 0; i < writeobject.size(); i++) {
+					System.out.println("notepad result is::::"+writeobject.get(i));
+					fw.write(writeobject.get(i) + "\r\n");
+				}
+			}
+			}
+			if (whichResponse.contains("db")) {
+				fw = new FileWriter(dbresulfoldr + "\\" + texfileName + ".txt");
+				//fw = new FileWriter(dbresulfoldr + "/" + texfileName + ".txt");
+
+				for (int i = 0; i < writeobject.size(); i++) {
+					fw.write(writeobject.get(i) + "\r\n");
+				}
+			}
+		} catch (Exception e) {
+
+			String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+			TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+					+ " An exception occued while wirting the list of items into text file:" + e.getMessage());
+			Reporter.log(" Method Name is : " + nameofCurrMethod
+					+ "An exception occued while wirting the list of items into text file: " + e.getMessage());
+
+		} finally {
+			try {
+				fw.close();
+			} catch (IOException e) {
+
+				String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+				TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+						+ " An exception occued while wirting the list of items into text file:" + e.getMessage());
+				Reporter.log(" Method Name is : " + nameofCurrMethod
+						+ "An exception occued while wirting the list of items into text file: " + e.getMessage());
+
+			}
+		}
+	}
+	
+	
+	/*
+	 * This method is sued to write the list object of items into text file
+	 * 
+	 * @Param writeobject This list object to provide
+	 * 
+	 * @Param textfileName: This is the name of the text file to write
+	 * 
+	 * @Param whichResponse: This is wether to write api or db response
+	 */
+	public static void writerrr(List<Object> writeobject, String texfileName, String whichResponse) {
 
 		FileWriter fw = null;
 		File apiresultfoldr = null;
@@ -356,8 +327,12 @@ public class NotepadWriter {
 			}
 		}
 	}
+	
+	
+	
 	/*
 	 * This method is used for check the string pattern match
+	 * 
 	 * @Param :pattern pattern of the string to match
 	 * 
 	 */
@@ -511,19 +486,131 @@ public class NotepadWriter {
 	 * 
 	 * @Param textfileNameTwo: This is the text file path of the second text file
 	 */
+	/*
+	 * public static boolean compareTextfiles(String texfileNameOne, String
+	 * texfileNameTwo) {
+	 * 
+	 * File fileOne = new File(apiresultLocation); File fileTwo = new
+	 * File(dbresultLocation); boolean compareResult = false; try { File f1 = new
+	 * File(fileOne + "\\" + texfileNameOne + ".txt"); File f2 = new File(fileTwo +
+	 * "\\" + texfileNameTwo + ".txt"); // File f1 = new File(fileOne + "/" +
+	 * texfileNameOne + ".txt"); // File f2 = new File(fileTwo + "/" +
+	 * texfileNameTwo + ".txt"); compareResult = FileUtils.contentEquals(f2, f1);
+	 * System.out.println("Are the files same? " + compareResult);
+	 * 
+	 * } catch (FileNotFoundException e) {
+	 * 
+	 * String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod +
+	 * "File not founc exception  occured while comapre the both (API and DB ) the text files: "
+	 * + e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod +
+	 * "File not founc exception  occured while comapre the both(API and DB )  the text files: "
+	 * + e.getMessage());
+	 * 
+	 * } catch (IOException e) {
+	 * 
+	 * String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+	 * TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod +
+	 * "File not founc exception  occured while comapre the both (API and DB ) the text files: "
+	 * + e.getMessage()); Reporter.log(" Method Name is : " + nameofCurrMethod +
+	 * "File not founc exception  occured while comapre the both(API and DB )  the text files: "
+	 * + e.getMessage());
+	 * 
+	 * }
+	 * 
+	 * return compareResult; }
+	 */
+	
+	
+	/*
+	 * This method is used to compare the both text files content
+	 * 
+	 * @Param textfileNameOne : This is the text file path of the first text file
+	 * 
+	 * @Param textfileNameTwo: This is the text file path of the second text file
+	 */
 
-	public static boolean compareTextfiles(String texfileNameOne, String texfileNameTwo) {
+	public static boolean compareTextfiles(String texfileNameOne, String texfileNameTwo)  {
 
-		File fileOne = new File(apiresultLocation);
-		File fileTwo = new File(dbresultLocation);
-		boolean compareResult = false;
+		//File fileOne = new File(apiresultLocation);
+		//File fileTwo = new File(dbresultLocation);
+		boolean compareResult = true;
+		 BufferedReader reader1 = null;
+		 BufferedReader reader2 = null ;
 		try {
-			File f1 = new File(fileOne + "\\" + texfileNameOne + ".txt");
-			File f2 = new File(fileTwo + "\\" + texfileNameTwo + ".txt");
+			//File f1 = new File(fileOne + "\\" + texfileNameOne + ".txt");
+			//File f2 = new File(fileTwo + "\\" + texfileNameTwo + ".txt");
 			// File f1 = new File(fileOne + "/" + texfileNameOne + ".txt");
 			// File f2 = new File(fileTwo + "/" + texfileNameTwo + ".txt");
-			compareResult = FileUtils.contentEquals(f2, f1);
-			System.out.println("Are the files same? " + compareResult);
+			
+		
+
+			  FileInputStream fis = new FileInputStream(dbresultLocation+"\\"+texfileNameOne+".txt");
+			  InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
+			  reader1 = new BufferedReader(new FileReader(apiresultLocation+"\\"+texfileNameOne+".txt" ));
+			  reader2 = new BufferedReader( isr);
+			 
+			
+			
+		//BufferedReader reader1 = new BufferedReader(new FileReader("C:\\Users\\INNAALA\\Desktop\\framewwork\\DIAS-TA-API\\APIAutomationReport\\apiresult\\D_Currency_s.no16_repetition_No1.txt"));
+		
+		//BufferedReader reader2 = new BufferedReader(new FileReader("C:\\Users\\INNAALA\\Desktop\\framewwork\\DIAS-TA-API\\APIAutomationReport\\dbresult\\D_Currency_s.no16_repetition_No1.txt"));
+		
+		String line1 = reader1.readLine();
+		
+		String line2 = reader2.readLine();
+		
+		boolean areEqual = true;
+		
+		int lineNum = 1;
+		boolean checkequal=true;
+		
+		while (line1 != null || line2 != null)
+		{
+			int count=0;
+			if(line1 == null || line2 == null)
+			{
+				areEqual = false;
+				
+				break;
+			}
+			else if(! line1.equalsIgnoreCase(line2))
+			{
+				areEqual = false;
+				
+				break;
+			}
+			
+			line1 = reader1.readLine();
+			
+			line2 = reader2.readLine();
+			
+			lineNum++;
+		}
+		
+		if(areEqual)
+		{
+			System.out.println("Two files have same content.");
+		}
+		else
+		{
+			 compareResult = false;
+			//checkequal=false;
+			System.out.println("Two files have different content. They differ at line "+lineNum);
+			
+			System.out.println("File1 has "+line1+" and File2 has "+line2+" at line "+lineNum);
+		}
+		System.out.println(checkequal);
+		//reader1.close();
+		
+		//reader2.close();
+			
+			
+			
+			
+			
+			//compareResult = FileUtils.contentEquals(f2, f1);
+			//System.out.println("Are the files same? " + compareResult);
 
 		} catch (FileNotFoundException e) {
 
@@ -546,8 +633,50 @@ public class NotepadWriter {
 					+ e.getMessage());
 
 		}
+		finally {
+			try {
+			reader1.close();
+			
+			reader2.close();
+			}catch(IOException e){
+				
+				String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+				TestLogger.errorMessage(" Method Name is : " + nameofCurrMethod
+						+ "File not founc exception  occured while comapre the both (API and DB ) the text files: "
+						+ e.getMessage());
+				Reporter.log(" Method Name is : " + nameofCurrMethod
+						+ "File not founc exception  occured while comapre the both(API and DB )  the text files: "
+						+ e.getMessage());
+
+				
+			}
+		}
 
 		return compareResult;
 	}
+
+
+/*
+	 * This method is used to check text file exists
+	 * 
+	 * @Param textfileNameOne : This is the text file path of the first text file
+	 * 
+	 *
+	 */
+
+public static boolean  checkFileExists(String dbTextFileLocation){
+
+     boolean dbTextFilePresent=false;
+     File dbTextFile;
+     
+    dbTextFile=new File(dbresultLocation+"\\"+dbTextFileLocation+".txt");
+    
+    if(dbTextFile.exists()){
+    
+     dbTextFilePresent=true;
+    }
+    
+return dbTextFilePresent;
+}
 
 }

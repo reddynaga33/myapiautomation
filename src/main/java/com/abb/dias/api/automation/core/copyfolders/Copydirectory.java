@@ -6,9 +6,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
+import org.testng.Reporter;
 
 import com.abb.dias.api.automation.core.envmanager.EnvironmentManager;
 import com.abb.dias.api.automation.core.excelreader.ExcelReader;
+import com.abb.dias.api.automation.core.log.TestLogger;
 
 public class Copydirectory {
 	
@@ -32,7 +34,14 @@ public class Copydirectory {
 			try {
 			    FileUtils.copyDirectory(srcDir, destDir);
 			} catch (IOException e) {
-			    e.printStackTrace();
+				
+				String nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
+				TestLogger.errorMessage(
+						"An exception occured while copying a report folder and creating report with new time stamp: " + e.getMessage());
+				Reporter.log(" Method Name is : " + nameofCurrMethod
+						+ " An exception occured while copying a report folder and creating report with new time stamp: :" + e.getMessage());
+				
+			 
 			}
 		}
 			

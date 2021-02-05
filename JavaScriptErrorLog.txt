@@ -1,0 +1,22 @@
+2020-11-22 9:51:26:934 :DataBase: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 - read ECONNRESET
+2020-11-22 14:21:0:324 :DataBase: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 in 15000ms
+2020-11-22 15:6:47:83 :Query: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 in 15000ms
+2020-11-22 15:17:8:422 :DataBase: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 - socket hang up
+2020-11-22 15:18:38:625 :Query: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 in 15000ms
+2020-11-22 15:19:32:613 :DataBase: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 in 15000ms
+2020-11-22 15:22:40:194 :Query: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 - socket hang up
+2020-11-22 15:53:12:3 :Query: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 - socket hang up
+2020-11-23 15:53:2:844 :Query: RequestError: Invalid column name 'tet_id'.
+2020-11-23 15:58:51:994 :Query: RequestError: Invalid column name 'tet_id'.
+2020-11-23 16:5:18:924 :Query: RequestError: Invalid column name 'tet_id'.
+2020-11-23 16:19:20:688 :Query: RequestError: Invalid column name 'tet_id'.
+2020-11-23 16:23:30:237 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-23 16:34:36:184 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-23 17:5:9:692 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-23 17:16:58:971 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-23 17:32:18:348 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-24 9:41:20:498 :Query: ConnectionError: Failed to connect to sqldb-cdm-dias-r2-0-0-qe-svr.database.windows.net:1433 in 15000ms
+2020-11-24 11:26:32:283 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-24 11:40:35:523 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-24 12:22:21:449 :Query: RequestError: The multi-part identifier "d_uom.UOM_ID" could not be bound.
+2020-11-28 14:23:6:486 :Query: RequestError: The multi-part identifier "d_dmg_cod_mst.DMG_COD_ID" could not be bound.
